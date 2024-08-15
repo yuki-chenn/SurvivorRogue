@@ -1,0 +1,4 @@
+repository "SurvivorRogue@yuki_chen@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <data>
+    <ID>1</ID>
+    <name>勇者</name>
+    <heroDescription>来自北方诸国的传奇勇者，传言他拔出了勇者之剑，开启了注定不凡的冒险旅程。在这段旅途中，他先后招募了强大的法师、勇猛的战士和虔诚的僧侣。他们共同历经了十年的风雨，最终凭借无与伦比的勇气和智慧，成功击败了可怕的魔王。 力量：&lt;color="#FFA500"&gt;S&lt;/color&gt; 生命：&lt;color="#B000FF"&gt;A&lt;/color&gt;</heroDescription>
+    <skillDescription>&lt;b&gt;&lt;color="#FF0000"&gt;旋风斩击&lt;/color&gt;&lt;/b&gt; 挥舞勇者之剑，对周围的敌人造成&lt;color="#FFA500"&gt;大量&lt;/color&gt;伤害。</skillDescription>
+    <passiveDescription>&lt;b&gt;&lt;color="#FF0000"&gt;背水一战&lt;/color&gt;&lt;/b&gt; 陷入困境时，总能爆发出全部的力量。当血量小于等于&lt;color="#FF0000"&gt;20%&lt;/color&gt;时，伤害增加&lt;color="#FFA500"&gt;50%&lt;/color&gt;，之后血量每减少&lt;color="#FF0000"&gt;5%&lt;/color&gt;，伤害增加&lt;color="#FFA500"&gt;50%&lt;/color&gt;。</passiveDescription>
+    <assetIndex>0</assetIndex>
+    <maxHp>250.0</maxHp>
+    <attackSpeed>100.0</attackSpeed>
+    <strength>50.0</strength>
+    <intelligence>5.0</intelligence>
+    <defense>20.0</defense>
+    <dodge>5.0</dodge>
+    <critical>5.0</critical>
+    <criticalDamage>150.0</criticalDamage>
+    <moveSpeed>100.0</moveSpeed>
+    <luck>5.0</luck>
+    <incMaxHp>35.0</incMaxHp>
+    <incAttackSpeed>0.0</incAttackSpeed>
+    <incStrength>20.0</incStrength>
+    <incIntelligence>1.0</incIntelligence>
+    <incDefense>5.0</incDefense>
+    <incDodge>0.0</incDodge>
+    <incCritical>0.1</incCritical>
+    <incCriticalDamage>0.5</incCriticalDamage>
+    <incMoveSpeed>0.0</incMoveSpeed>
+    <incLuck>2.0</incLuck>
+    <salary>20</salary>
+  </data>
+  <data>
+    <ID>2</ID>
+    <name>魔法师</name>
+    <heroDescription>传说的勇者小队中的魔法师，是一位活了数千年的精灵，最喜欢的事情就是收集各种各样的魔法。实力强劲，天资优异。性格淡漠，看起来不近人情，实际是比较慢热。有点毒舌，睡姿很差，对人类的情感反应比较迟钝。 智力：&lt;color="#FFA500"&gt;S&lt;/color&gt; 暴击伤害：&lt;color="#FFA500"&gt;S&lt;/color&gt;</heroDescription>
+    <skillDescription>&lt;b&gt;&lt;color="#FF0000"&gt;星落&lt;/color&gt;&lt;/b&gt; 召唤星星撞击地面，对范围内的敌人持续造成&lt;color="#FFA500"&gt;较小&lt;/color&gt;的伤害。</skillDescription>
+    <passiveDescription>&lt;b&gt;&lt;color="#FF0000"&gt;防御魔法&lt;/color&gt;&lt;/b&gt; 当生命值降低至&lt;color="#FF0000"&gt;20%&lt;/color&gt;以下时。生成一个持续&lt;color="#FFA500"&gt;2s&lt;/color&gt;的可以&lt;color="#FFA500"&gt;抵御所有攻击&lt;/color&gt;的护盾。</passiveDescription>
+    <assetIndex>1</assetIndex>
+    <maxHp>150.0</maxHp>
+    <attackSpeed>100.0</attackSpeed>
+    <strength>5.0</strength>
+    <intelligence>60.0</intelligence>
+    <defense>6.0</defense>
+    <dodge>5.0</dodge>
+    <critical>5.0</critical>
+    <criticalDamage>170.0</criticalDamage>
+    <moveSpeed>100.0</moveSpeed>
+    <luck>5.0</luck>
+    <incMaxHp>10.0</incMaxHp>
+    <incAttackSpeed>0.0</incAttackSpeed>
+    <incStrength>1.0</incStrength>
+    <incIntelligence>25.0</incIntelligence>
+    <incDefense>2.0</incDefense>
+    <incDodge>0.0</incDodge>
+    <incCritical>0.1</incCritical>
+    <incCriticalDamage>2.0</incCriticalDamage>
+    <incMoveSpeed>0.0</incMoveSpeed>
+    <incLuck>2.0</incLuck>
+    <salary>20</salary>
+  </data>
+</root>

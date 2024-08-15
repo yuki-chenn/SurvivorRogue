@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Wall
+  - Drop
+  - EnemyFlyObj
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Core
+  - AttackTrigger
+  - Wall
+  - AttackObject
+  - Weapon
+  - Drop
+  - PickUp
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Map
+    uniqueID: 843654553
+    locked: 0
+  - name: Charater
+    uniqueID: 939051469
+    locked: 0
+  - name: Drop
+    uniqueID: 655022457
+    locked: 0
+  - name: Weapon
+    uniqueID: 1153865233
+    locked: 0
+  - name: Effect
+    uniqueID: 1267629979
+    locked: 0
+  - name: CharacterUI
+    uniqueID: 1573129481
+    locked: 0
+  - name: Top
+    uniqueID: 2717829123
+    locked: 0

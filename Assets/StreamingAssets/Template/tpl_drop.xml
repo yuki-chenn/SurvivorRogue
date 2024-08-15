@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <data>
+    <ID>1</ID>
+    <money>1</money>
+    <healthPotionRate>0.01</healthPotionRate>
+    <rareChestRate>0.0</rareChestRate>
+    <epicChestRate>-0.02</epicChestRate>
+    <legendChestRate>-1.0</legendChestRate>
+  </data>
+  <data>
+    <ID>2</ID>
+    <money>5</money>
+    <healthPotionRate>1.0</healthPotionRate>
+    <rareChestRate>0.0</rareChestRate>
+    <epicChestRate>0.0</epicChestRate>
+    <legendChestRate>0.0</legendChestRate>
+  </data>
+  <data>
+    <ID>3</ID>
+    <money>2</money>
+    <healthPotionRate>0.02</healthPotionRate>
+    <rareChestRate>0.0</rareChestRate>
+    <epicChestRate>-0.01</epicChestRate>
+    <legendChestRate>-1.0</legendChestRate>
+  </data>
+  <data>
+    <ID>4</ID>
+    <money>200</money>
+    <healthPotionRate>0.0</healthPotionRate>
+    <rareChestRate>0.5</rareChestRate>
+    <epicChestRate>0.8</epicChestRate>
+    <legendChestRate>1.0</legendChestRate>
+  </data>
+</root>
