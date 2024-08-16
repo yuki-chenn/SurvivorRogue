@@ -63,7 +63,30 @@ namespace Survivor.Utils
             return scale;
         }
 
-
+        public static int GetQuadrant(Vector2 pos)
+        {
+            // 根据位置计算在第几象限
+            if (pos.x > 0 && pos.y > 0)
+            {
+                return 1; // 第一象限
+            }
+            else if (pos.x < 0 && pos.y > 0)
+            {
+                return 2; // 第二象限
+            }
+            else if (pos.x < 0 && pos.y < 0)
+            {
+                return 3; // 第三象限
+            }
+            else if (pos.x > 0 && pos.y < 0)
+            {
+                return 4; // 第四象限
+            }
+            else
+            {
+                return 0; // 点在坐标轴上，或在原点
+            }
+        }
 
 
 

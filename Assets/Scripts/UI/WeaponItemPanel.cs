@@ -10,12 +10,12 @@ public class WeaponItemPanel : MonoBehaviour
 {
 
     private Button backBtn;
-    private Button confirmBtn;
 
     private Transform content;
 
     private Text txtName;
     private Text txtDescription;
+    private Text txtTitle;
 
 
     private List<WeaponTplInfo> weaponInfos;
@@ -49,17 +49,12 @@ public class WeaponItemPanel : MonoBehaviour
         itemInfos = TplUtil.GetItemList();
         itemInfos.RemoveAll(x => x.Initial == 0);
 
-        txtName = transform.Find("Name").GetComponent<Text>();
-        txtDescription = transform.Find("DescriptionScroll/Viewport/Text").GetComponent<Text>();
+        txtName = transform.Find("Des/Name").GetComponent<Text>();
+        txtDescription = transform.Find("Des/DescriptionScroll/Viewport/Text").GetComponent<Text>();
+        txtTitle = transform.Find("BgFrame/TitleBar/Title").GetComponent<Text>();
 
-        backBtn = transform.Find("BackBtn").GetComponent<Button>();
+        backBtn = transform.Find("BgFrame/BackBtn").GetComponent<Button>();
         backBtn.onClick.AddListener(() =>
-        {
-            Hide();
-        });
-
-        confirmBtn = transform.Find("ConfirmBtn").GetComponent<Button>();
-        confirmBtn.onClick.AddListener(() =>
         {
             if (showType == 0)
             {
@@ -121,6 +116,7 @@ public class WeaponItemPanel : MonoBehaviour
                 AssetManager.Instance.weaponSprite[info.Index];
             go.Find("Selected").gameObject.SetActive(curSelectedWeaponIndex == i);
             int index = i;
+            go.GetComponent<Button>().onClick.RemoveAllListeners();
             go.GetComponent<Button>().onClick.AddListener(() =>
             {
                 curSelectedWeaponIndex = index;
@@ -155,6 +151,7 @@ public class WeaponItemPanel : MonoBehaviour
                 AssetManager.Instance.itemSprite[info.Index];
             go.Find("Selected").gameObject.SetActive(curSelectedItemIndex == i);
             int index = i;
+            go.GetComponent<Button>().onClick.RemoveAllListeners();
             go.GetComponent<Button>().onClick.AddListener(() =>
             {
                 curSelectedItemIndex = index;
@@ -184,12 +181,14 @@ public class WeaponItemPanel : MonoBehaviour
     {
         if(showType == 0)
         {
+            txtTitle.text = "请选择初始武器";
             var info = weaponInfos[curSelectedWeaponIndex];
             txtName.text = info.Name;
             txtDescription.text = info.Description;
         }
         else
         {
+            txtTitle.text = "请选择初始道具";
             var info = itemInfos[curSelectedItemIndex];
             txtName.text = info.Name;
             txtDescription.text = info.Description;

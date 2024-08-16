@@ -56,10 +56,10 @@ public class GameUIManager : Singleton<GameUIManager>
     private void InitExpLevelUI()
     {
         Transform ExpLevel = transform.Find("ExpLevel");
-        txtLevel = ExpLevel.Find("Level").GetComponent<Text>();
-        txtExp = ExpLevel.Find("Exp").GetComponent<Text>();
+        txtLevel = ExpLevel.Find("Level/LevelNum").GetComponent<Text>();
+        txtExp = ExpLevel.Find("ExpSlider/Exp").GetComponent<Text>();
         sliderExp = ExpLevel.Find("ExpSlider").GetComponent<Slider>();
-        imgAvatar = ExpLevel.Find("Avatar").GetComponent<Image>();
+        imgAvatar = ExpLevel.Find("Avatar/AvatarIcon").GetComponent<Image>();
         imgAvatar.sprite = AssetManager.Instance.heroSprite[GameManager.Instance.gameData.HeroInfo.Index];
         btnInfo = ExpLevel.Find("Avatar").GetComponent<Button>();
         btnInfo.onClick.AddListener(() =>
@@ -115,7 +115,7 @@ public class GameUIManager : Singleton<GameUIManager>
 
     public void UpdateLevelExp(int level,int curExp,int nextExp)
     {
-        txtLevel.text = string.Format("Level£º{0}", level.ToString());
+        txtLevel.text = level.ToString();
         txtExp.text = string.Format("{0}/{1}", curExp.ToString(), nextExp.ToString());
         sliderExp.value = 1.0f * curExp / nextExp;
     }
