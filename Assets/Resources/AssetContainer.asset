@@ -136,10 +136,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 13d41cbd8e38254429cd2b4ee849642e, type: 3}
   skillSprite:
   - {fileID: 21300000, guid: e20e51ba419f4d843913bb6d57b5cd65, type: 3}
-  - {fileID: 21300000, guid: e20e51ba419f4d843913bb6d57b5cd65, type: 3}
+  - {fileID: 21300000, guid: 1c2cd1143c72ff14d8cc41334822fc84, type: 3}
   passiveSprite:
   - {fileID: 21300000, guid: ab0b904d812e8b646ae4393b3ed492a4, type: 3}
-  - {fileID: 21300000, guid: ab0b904d812e8b646ae4393b3ed492a4, type: 3}
+  - {fileID: 21300000, guid: df63241cf7edaa24386afdb531569187, type: 3}
   shopItemLockSprite: {fileID: 5021858729185537587, guid: ab9759ae05db8c841a8bcb38ab5db61f, type: 3}
   shopItemUnLockSprite: {fileID: 1220242236409363113, guid: 51a2c6f72fca74b42b74ae2f566d2226, type: 3}
   "\u82F1\u96C4\u9009\u62E9\u5934\u50CF\u6A21\u677F": {fileID: 3205093047965877428, guid: 7c8a181cf2ba3a54ea30ab6f0da7f46b, type: 3}

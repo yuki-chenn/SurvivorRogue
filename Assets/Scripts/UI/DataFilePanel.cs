@@ -33,7 +33,7 @@ public class DataFilePanel : MonoBehaviour
         canvasGroup = transform.GetComponent<CanvasGroup>();
         canvasGroup.alpha = 0;
 
-        txtTitle = transform.Find("Title").GetComponent<Text>();
+        txtTitle = transform.Find("TopTitle/Title").GetComponent<Text>();
         btnBack = transform.Find("BackBtn").GetComponent<Button>();
         btnBack.onClick.AddListener(() =>
         {
