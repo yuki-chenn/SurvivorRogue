@@ -309,7 +309,7 @@
     <duration>3.0</duration>
     <tickTime>-1.0</tickTime>
     <maxTickCount>-1</maxTickCount>
-    <priority>0</priority>
+    <priority>99</priority>
     <addType>1</addType>
     <removeType>0</removeType>
   </data>
