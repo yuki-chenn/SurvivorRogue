@@ -498,6 +498,7 @@ public class ShopPanel : MonoBehaviour
     string itemId;
     private void OnGUI()
     {
+#if UNITY_EDITOR
         GUIStyle buttonStyle = new GUIStyle(GUI.skin.button);
         buttonStyle.fontSize = 50; // Set font size
 
@@ -527,6 +528,7 @@ public class ShopPanel : MonoBehaviour
             gameData.money += 100000;
             RefreshPanel();
         }
+#endif
     }
 
 }

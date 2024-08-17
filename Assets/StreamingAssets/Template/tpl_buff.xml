@@ -304,9 +304,9 @@
   <data>
     <ID>26</ID>
     <name>防御魔法</name>
-    <description>5s内抵挡所有攻击的伤害</description>
+    <description>3s内抵挡所有攻击的伤害</description>
     <maxStack>-1</maxStack>
-    <duration>2.0</duration>
+    <duration>3.0</duration>
     <tickTime>-1.0</tickTime>
     <maxTickCount>-1</maxTickCount>
     <priority>0</priority>
