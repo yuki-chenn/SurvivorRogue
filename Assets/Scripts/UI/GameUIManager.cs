@@ -34,8 +34,8 @@ public class GameUIManager : Singleton<GameUIManager>
         InitExpLevelUI();
 
         txtWaveCount = transform.Find("WaveCount").GetComponent<Text>();
-        txtWaveCountDown = transform.Find("WaveCountDown").GetComponent<Text>();
-        txtMoney = transform.Find("Money").GetComponent<Text>();
+        txtWaveCountDown = transform.Find("Wave/WaveCountDown").GetComponent<Text>();
+        txtMoney = transform.Find("Money/MoneyCount").GetComponent<Text>();
     }
 
     private void InitSkillUI()
@@ -110,7 +110,7 @@ public class GameUIManager : Singleton<GameUIManager>
 
     public void UpdateMoney(int money)
     {
-        txtMoney.text = string.Format("½ðÇ®£º{0}", money.ToString());
+        txtMoney.text = money.ToString();
     }
 
     public void UpdateLevelExp(int level,int curExp,int nextExp)

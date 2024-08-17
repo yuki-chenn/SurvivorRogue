@@ -16,8 +16,8 @@ namespace LayerLab.GUIScripts
         private int _page;
         private bool _isReady;
         private TextMeshProUGUI _textTitle;
-        [SerializeField] private List<GameObject> defaultPanels = new ();
-        [SerializeField] private List<GameObject> otherPanels = new ();
+        [SerializeField] private List<GameObject> defaultPanels = new List<GameObject>();
+        [SerializeField] private List<GameObject> otherPanels = new List<GameObject>();
         
         [SerializeField] private Transform panelTransformDefault;
         [SerializeField] private Transform panelTransformOther;

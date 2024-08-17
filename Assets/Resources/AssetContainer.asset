@@ -140,8 +140,13 @@ MonoBehaviour:
   passiveSprite:
   - {fileID: 21300000, guid: ab0b904d812e8b646ae4393b3ed492a4, type: 3}
   - {fileID: 21300000, guid: df63241cf7edaa24386afdb531569187, type: 3}
-  shopItemLockSprite: {fileID: 5021858729185537587, guid: ab9759ae05db8c841a8bcb38ab5db61f, type: 3}
-  shopItemUnLockSprite: {fileID: 1220242236409363113, guid: 51a2c6f72fca74b42b74ae2f566d2226, type: 3}
+  shopItemLockSprite: {fileID: 21300000, guid: 77213341e9402478f8011cfe1ff7356b, type: 3}
+  shopItemUnLockSprite: {fileID: 21300000, guid: 28a3027aa09f54e7abc49c9bb8ad0818, type: 3}
+  "\u5546\u5E97\u6B66\u5668\u9053\u5177\u8D2D\u4E70\u7B49\u7EA7\u8FB9\u6846":
+  - {fileID: 21300000, guid: 947294adaf4e248929e8c31cdc0da38d, type: 3}
+  - {fileID: 21300000, guid: 70db338447d354c36a0975fb616b135e, type: 3}
+  - {fileID: 21300000, guid: 1757479cd707b4180a861faf78aeccb2, type: 3}
+  - {fileID: 21300000, guid: 356c0b18fbd3e4e94a7e05ae60d72575, type: 3}
   "\u82F1\u96C4\u9009\u62E9\u5934\u50CF\u6A21\u677F": {fileID: 3205093047965877428, guid: 7c8a181cf2ba3a54ea30ab6f0da7f46b, type: 3}
   "\u6B66\u5668\u9053\u5177\u9009\u62E9\u6A21\u677F": {fileID: 4255483243642371795, guid: d05898be8c9f3ce47829696ed04355af, type: 3}
   "\u5546\u5E97\u6B66\u5668\u663E\u793A\u6A21\u677F": {fileID: 1663407335123320222, guid: deffcad84c4c1f648aeda978909a6439, type: 3}

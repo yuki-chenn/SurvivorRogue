@@ -7,6 +7,7 @@ using Survivor.Utils;
 using Survivor.Template;
 using System;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ShopPanel : MonoBehaviour
 {
@@ -23,9 +24,7 @@ public class ShopPanel : MonoBehaviour
 
     private List<Text> txtAttr = new List<Text>();
 
-    private Text txtSalary;
-    private Text txtMoney;
-    private Text txtRefreshCost;
+    private TextMeshProUGUI txtRefreshCost;
 
     public bool[] isLock;
 
@@ -41,6 +40,8 @@ public class ShopPanel : MonoBehaviour
             _refreshCost = value;
         }
     }
+
+    private string MONEY_TXT_PREFIX = "<sprite=0> ";
 
     
 
@@ -172,10 +173,7 @@ public class ShopPanel : MonoBehaviour
         {
             txtAttr.Add(child.Find("AttrValue").GetComponent<Text>());
         }
-
-        txtSalary = transform.Find("Salary/Value").GetComponent<Text>();
-        txtMoney = transform.Find("Money").GetComponent<Text>();
-        txtRefreshCost = transform.Find("RefreshCost").GetComponent<Text>();
+        txtRefreshCost = transform.Find("RefreshBtn/RefreshCost").GetComponent<TextMeshProUGUI>();
 
         InitShopSelections();
 
@@ -228,8 +226,21 @@ public class ShopPanel : MonoBehaviour
                 {
                     EventCenter.Broadcast<WeaponTplInfo, Vector2, int>(EventDefine.ShowWeaponPopUpPanel, info, weaponGo.transform.position, index);
                 });
+                weaponGo.transform.Find("WeaponIcon").GetComponent<Image>().sprite = weaponIcon;
+                weaponGo.transform.Find("bg").GetComponent<Image>().color = Constants.RANK_COLOR[info.Rank];
+                foreach (Transform trans in weaponGo.transform)
+                {
+                    trans.gameObject.SetActive(true);
+                }
             }
-            weaponGo.transform.Find("WeaponIcon").GetComponent<Image>().sprite = weaponIcon;
+            else
+            {
+                foreach(Transform trans in weaponGo.transform)
+                {
+                    trans.gameObject.SetActive(false);
+                }
+            }
+           
         }
     }
 
@@ -246,7 +257,7 @@ public class ShopPanel : MonoBehaviour
         txtAttr[7].text = gameData.playerAttr.暴击伤害.ToString("F1") + "%";
         txtAttr[8].text = gameData.playerAttr.移动速度.ToString("F0");
         txtAttr[9].text = gameData.playerAttr.幸运.ToString("F0");
-        txtSalary.text = gameData.salary.ToString();
+        txtAttr[10].text = gameData.salary.ToString();
 
     }
 
@@ -271,17 +282,22 @@ public class ShopPanel : MonoBehaviour
         if(gameData.selectionsType[index] == -1)
         {
             GameObjectUtil.SetAllChildGameObjectEnable(go.transform, false);
+            go.GetComponent<Image>().enabled = false;
             return;
         }
         else
         {
             GameObjectUtil.SetAllChildGameObjectEnable(go.transform, true);
+            go.GetComponent<Image>().enabled = true;
         }
+
+        Image bg = go.GetComponent<Image>();
+        Image border = go.transform.Find("Border").GetComponent<Image>();
 
         Image imgIcon = go.transform.Find("Item/Icon").GetComponent<Image>();
         Text txtName = go.transform.Find("Item/Name").GetComponent<Text>();
         Text txtRank = go.transform.Find("Item/Rank").GetComponent<Text>();
-        Text txtPrice = go.transform.Find("Item/Price").GetComponent<Text>();
+        TextMeshProUGUI txtPrice = go.transform.Find("Item/Price").GetComponent<TextMeshProUGUI>();
         Text txtDes = go.transform.Find("Item/DescriptionScroll/Viewport/Text").GetComponent<Text>();
         GameObject weaponFlag = go.transform.Find("Item/WeaponFlag").gameObject;
         Image imgIsLock = go.transform.Find("Lock").GetComponent<Image>();
@@ -292,11 +308,14 @@ public class ShopPanel : MonoBehaviour
         {
             // 武器
             WeaponTplInfo info = TplUtil.GetWeaponMap()[gameData.selectionsId[index]];
+            bg.color = Constants.RANK_COLOR_BG[info.Rank];
+            border.sprite = AssetManager.Instance.商店武器道具购买等级边框[info.Rank - 1];
+
             imgIcon.sprite = AssetManager.Instance.weaponSprite[info.Index];
             txtName.text = info.Name;
             txtRank.text = Constants.RANK_NAME[info.Rank];
             txtRank.color = Constants.RANK_COLOR[info.Rank];
-            txtPrice.text = gameData.isFree[index] ? "免费" : ((int)(info.Price * WeaponDiscount)).ToString();
+            txtPrice.SetText(MONEY_TXT_PREFIX + (gameData.isFree[index] ? "FREE" : ((int)(info.Price * WeaponDiscount)).ToString()));
             txtDes.text = info.Description;
             weaponFlag.SetActive(true);
             go.name = string.Format("weapon-{0}-{1}",info.ID,info.Name);
@@ -305,11 +324,14 @@ public class ShopPanel : MonoBehaviour
         {
             // 道具
             ItemTplInfo info = TplUtil.GetItemMap()[gameData.selectionsId[index]];
+            bg.color = Constants.RANK_COLOR_BG[info.Rank];
+            border.sprite = AssetManager.Instance.商店武器道具购买等级边框[info.Rank - 1];
+
             imgIcon.sprite = AssetManager.Instance.itemSprite[info.Index];
             txtName.text = info.Name;
             txtRank.text = Constants.RANK_NAME[info.Rank];
             txtRank.color = Constants.RANK_COLOR[info.Rank];
-            txtPrice.text = gameData.isFree[index] ? "免费" : ((int)(info.Price * ItemDiscount)).ToString();
+            txtPrice.SetText(MONEY_TXT_PREFIX + (gameData.isFree[index] ? "FREE" : ((int)(info.Price * ItemDiscount)).ToString()));
             txtDes.text = info.Description;
             weaponFlag.SetActive(false);
             go.name = string.Format("item-{0}-{1}", info.ID, info.Name);
@@ -343,8 +365,8 @@ public class ShopPanel : MonoBehaviour
     // 刷新金币
     private void RefreshMoney()
     {
-        txtMoney.text = string.Format("金币：{0}", gameData.money);
-        txtRefreshCost.text = string.Format("刷新：{0}", gameData.isNextFree ? "免费" : refreshCost.ToString());
+        GameUIManager.Instance.UpdateMoney(gameData.money);
+        txtRefreshCost.SetText(MONEY_TXT_PREFIX + string.Format("{0}", gameData.isNextFree ? "FREE" : refreshCost.ToString()));
     }
 
     private void RefreshPanel()

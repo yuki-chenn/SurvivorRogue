@@ -89,6 +89,15 @@ public class Constants
         new Color(1.0f, 0.5f, 0.0f)  // 传说: 橙色
     };
 
+    public static Color[] RANK_COLOR_BG = new Color[]
+    {
+        new Color(0.0f, 0.0f, 0.0f, 0.1f), // 占位
+        new Color(0.8f, 0.8f, 0.8f, 0.1f), // 普通: 灰色
+        new Color(0.7f, 1.0f, 1.0f, 0.1f), // 稀有: 蓝色
+        new Color(0.6f, 0.2f, 0.8f, 0.1f), // 史诗: 紫色
+        new Color(1.0f, 0.5f, 0.0f, 0.1f)  // 传说: 橙色
+    };
+
     public static int[] CHEST_SALE_PRICE_BY_RANK = new int[] { 0, 21, 51, 131, 291 };
 
 
