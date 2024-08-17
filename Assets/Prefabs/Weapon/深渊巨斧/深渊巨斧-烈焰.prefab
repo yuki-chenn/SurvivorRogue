@@ -194,6 +194,6 @@ MonoBehaviour:
   weaponId: -1
   enemyList: []
   "\u653B\u51FB\u7269": {fileID: 4264624286505293848}
-  "\u751F\u547D\u500D\u7387": 0.2
+  "\u751F\u547D\u500D\u7387": 0.16
   "\u4E00\u5708\u653B\u51FB": 1
   scale: 5

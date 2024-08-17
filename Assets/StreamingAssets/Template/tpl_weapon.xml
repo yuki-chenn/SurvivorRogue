@@ -8,7 +8,7 @@
     <attack>10.0</attack>
     <attackSpeed>0.6</attackSpeed>
     <attackRange>2.0</attackRange>
-    <description>似乎继承了勇者的意志，会自己插入敌人的身体。 攻击：&lt;color="#44BF19"&gt;10+20%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;0.5&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每4次攻击，下一次就会笔直的向敌人射出，并穿透当前路径上的所有敌人。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;10+20%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;0.6&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每&lt;color="#44BF19"&gt;4&lt;/color&gt;次攻击，下一次就会以笔直向敌人射出，并穿透当前路径上的所有敌人。</description>
     <price>18</price>
     <index>0</index>
     <rankupWeaponID>2</rankupWeaponID>
@@ -21,7 +21,7 @@
     <attack>30.0</attack>
     <attackSpeed>1.0</attackSpeed>
     <attackRange>2.1</attackRange>
-    <description>勇者的意志寄宿在剑内，自发的攻击敌人。 攻击：&lt;color="#44BF19"&gt;30+25%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;0.8&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每3次攻击，下一次就会笔直的向敌人射出，并穿透当前路径上的所有敌人。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;30+25%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;1&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每&lt;color="#44BF19"&gt;3&lt;/color&gt;次攻击，下一次就会以笔直向敌人射出，并穿透当前路径上的所有敌人。</description>
     <price>40</price>
     <index>1</index>
     <rankupWeaponID>3</rankupWeaponID>
@@ -34,7 +34,7 @@
     <attack>90.0</attack>
     <attackSpeed>1.4</attackSpeed>
     <attackRange>2.3</attackRange>
-    <description>当勇者拔出这把剑时，周围所有的声音都消失了。 攻击：&lt;color="#44BF19"&gt;90+40%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;1.2&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每2次攻击，下一次就会笔直的向敌人射出，并穿透当前路径上的所有敌人。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;90+40%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;1.4&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每&lt;color="#44BF19"&gt;2&lt;/color&gt;次攻击，下一次就会以笔直向敌人射出，并穿透当前路径上的所有敌人。</description>
     <price>96</price>
     <index>2</index>
     <rankupWeaponID>4</rankupWeaponID>
@@ -47,7 +47,7 @@
     <attack>270.0</attack>
     <attackSpeed>1.7</attackSpeed>
     <attackRange>2.5</attackRange>
-    <description>勇者的灵魂已经和这把剑融为一体。 攻击：&lt;color="#44BF19"&gt;270+80%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;1.5&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;中等&lt;/color&gt; 每1次攻击，下一次就会笔直的向敌人射出，并穿透当前路径上的所有敌人。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;270+80%&lt;/color&gt;力量 攻速：&lt;color="#44BF19"&gt;1.7&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较大&lt;/color&gt; 每&lt;color="#44BF19"&gt;1&lt;/color&gt;次攻击，下一次就会以笔直向敌人射出，并穿透当前路径上的所有敌人。</description>
     <price>224</price>
     <index>3</index>
     <rankupWeaponID>-1</rankupWeaponID>
@@ -60,7 +60,7 @@
     <attack>8.0</attack>
     <attackSpeed>0.5</attackSpeed>
     <attackRange>2.5</attackRange>
-    <description>可以同时对攻击范围内的最多2名敌人造成伤害。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;8+20%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;0.5&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较大&lt;/color&gt; 可以同时对攻击范围内的最多&lt;color="#44BF19"&gt;2&lt;/color&gt;名敌人造成伤害。</description>
     <price>18</price>
     <index>4</index>
     <rankupWeaponID>6</rankupWeaponID>
@@ -73,7 +73,7 @@
     <attack>24.0</attack>
     <attackSpeed>0.8</attackSpeed>
     <attackRange>2.6</attackRange>
-    <description>可以同时对攻击范围内的最多3名敌人造成伤害。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;24+25%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;0.8&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较大&lt;/color&gt; 可以同时对攻击范围内的最多&lt;color="#44BF19"&gt;3&lt;/color&gt;名敌人造成伤害。</description>
     <price>40</price>
     <index>5</index>
     <rankupWeaponID>7</rankupWeaponID>
@@ -86,7 +86,7 @@
     <attack>72.0</attack>
     <attackSpeed>1.2</attackSpeed>
     <attackRange>2.8</attackRange>
-    <description>可以同时对攻击范围内的最多5名敌人造成伤害。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;72+40%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;1.2&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较大&lt;/color&gt; 可以同时对攻击范围内的最多&lt;color="#44BF19"&gt;5&lt;/color&gt;名敌人造成伤害。</description>
     <price>96</price>
     <index>6</index>
     <rankupWeaponID>8</rankupWeaponID>
@@ -99,7 +99,7 @@
     <attack>216.0</attack>
     <attackSpeed>1.5</attackSpeed>
     <attackRange>3.0</attackRange>
-    <description>可以同时对攻击范围内的最多8名敌人造成伤害。</description>
+    <description>攻击：&lt;color="#44BF19"&gt;216+80%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;1.5&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;大&lt;/color&gt; 可以同时对攻击范围内的最多&lt;color="#44BF19"&gt;8&lt;/color&gt;名敌人造成伤害。</description>
     <price>224</price>
     <index>7</index>
     <rankupWeaponID>-1</rankupWeaponID>
@@ -112,7 +112,7 @@
     <attack>25.0</attack>
     <attackSpeed>0.3</attackSpeed>
     <attackRange>0.3</attackRange>
-    <description>攻击产生波动，对小范围内的所有敌人造成伤害，并击退周围的敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;30+15%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;5%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.3&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;很小&lt;/color&gt; 攻击产生波动，对范围内的所有敌人造成伤害，并&lt;color="#44BF19"&gt;小力度&lt;/color&gt;击退周围的敌人</description>
     <price>18</price>
     <index>8</index>
     <rankupWeaponID>10</rankupWeaponID>
@@ -125,7 +125,7 @@
     <attack>65.0</attack>
     <attackSpeed>0.4</attackSpeed>
     <attackRange>0.5</attackRange>
-    <description>攻击产生波动，对中等范围内的所有敌人造成伤害，并击退周围的敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;50+20%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;8%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.4&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;很小&lt;/color&gt; 攻击产生波动，对范围内的所有敌人造成伤害，并&lt;color="#44BF19"&gt;中等力度&lt;/color&gt;击退周围的敌人</description>
     <price>40</price>
     <index>9</index>
     <rankupWeaponID>11</rankupWeaponID>
@@ -138,7 +138,7 @@
     <attack>205.0</attack>
     <attackSpeed>0.5</attackSpeed>
     <attackRange>0.8</attackRange>
-    <description>攻击产生波动，对大范围内的所有敌人造成伤害，并击退周围的敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;140+40%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;10%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.65&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;小&lt;/color&gt; 攻击产生波动，对范围内的所有敌人造成伤害，并&lt;color="#44BF19"&gt;中等力度&lt;/color&gt;击退周围的敌人</description>
     <price>96</price>
     <index>10</index>
     <rankupWeaponID>12</rankupWeaponID>
@@ -151,7 +151,7 @@
     <attack>585.0</attack>
     <attackSpeed>0.65</attackSpeed>
     <attackRange>1.0</attackRange>
-    <description>攻击产生波动，对特大范围内的所有敌人造成伤害，并击退周围的敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;400+70%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;12%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.65&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较小&lt;/color&gt; 攻击产生波动，对范围内的所有敌人造成伤害，并&lt;color="#44BF19"&gt;中等力度&lt;/color&gt;击退周围的敌人</description>
     <price>224</price>
     <index>11</index>
     <rankupWeaponID>-1</rankupWeaponID>
@@ -164,7 +164,7 @@
     <attack>5.0</attack>
     <attackSpeed>0.8</attackSpeed>
     <attackRange>2.5</attackRange>
-    <description>向前方射出三只箭矢</description>
+    <description>攻击：&lt;color="#44BF19"&gt;5+15%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;15%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;0.8&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较大&lt;/color&gt; 同时向前方发射&lt;color="#44BF19"&gt;3&lt;/color&gt;支箭矢</description>
     <price>18</price>
     <index>12</index>
     <rankupWeaponID>14</rankupWeaponID>
@@ -177,7 +177,7 @@
     <attack>15.0</attack>
     <attackSpeed>1.2</attackSpeed>
     <attackRange>2.8</attackRange>
-    <description>向前方射出五只箭矢</description>
+    <description>攻击：&lt;color="#44BF19"&gt;15+20%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;20%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;1.2&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较大&lt;/color&gt; 同时向前方发射&lt;color="#44BF19"&gt;5&lt;/color&gt;支箭矢</description>
     <price>40</price>
     <index>13</index>
     <rankupWeaponID>15</rankupWeaponID>
@@ -190,7 +190,7 @@
     <attack>45.0</attack>
     <attackSpeed>1.6</attackSpeed>
     <attackRange>3.0</attackRange>
-    <description>向前方射出七只箭矢</description>
+    <description>攻击：&lt;color="#44BF19"&gt;45+32%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;32%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;1.6&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;大&lt;/color&gt; 同时向前方发射&lt;color="#44BF19"&gt;7&lt;/color&gt;支箭矢</description>
     <price>96</price>
     <index>14</index>
     <rankupWeaponID>16</rankupWeaponID>
@@ -203,7 +203,7 @@
     <attack>135.0</attack>
     <attackSpeed>2.0</attackSpeed>
     <attackRange>3.5</attackRange>
-    <description>向前方射出九只箭矢</description>
+    <description>攻击：&lt;color="#44BF19"&gt;135+50%&lt;/color&gt;力量+&lt;color="#44BF19"&gt;50%&lt;/color&gt;智力 攻速：&lt;color="#44BF19"&gt;2&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;很大&lt;/color&gt; 同时向前方发射&lt;color="#44BF19"&gt;9&lt;/color&gt;支箭矢</description>
     <price>224</price>
     <index>15</index>
     <rankupWeaponID>-1</rankupWeaponID>
@@ -216,7 +216,7 @@
     <attack>15.0</attack>
     <attackSpeed>0.5</attackSpeed>
     <attackRange>0.6</attackRange>
-    <description>微微变大后横扫敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;15+4%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.5&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;小&lt;/color&gt; &lt;color="#44BF19"&gt;略微变大&lt;/color&gt;后&lt;color="#44BF19"&gt;横扫&lt;/color&gt;敌人</description>
     <price>18</price>
     <index>16</index>
     <rankupWeaponID>18</rankupWeaponID>
@@ -229,7 +229,7 @@
     <attack>40.0</attack>
     <attackSpeed>0.6</attackSpeed>
     <attackRange>0.75</attackRange>
-    <description>变大后横扫敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;40+8%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.6&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;小&lt;/color&gt; &lt;color="#44BF19"&gt;变大&lt;/color&gt;后&lt;color="#44BF19"&gt;横扫&lt;/color&gt;敌人</description>
     <price>40</price>
     <index>17</index>
     <rankupWeaponID>19</rankupWeaponID>
@@ -242,7 +242,7 @@
     <attack>130.0</attack>
     <attackSpeed>0.75</attackSpeed>
     <attackRange>1.0</attackRange>
-    <description>变的巨大后横扫敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;130+12%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.75&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较小&lt;/color&gt; &lt;color="#44BF19"&gt;变的特大&lt;/color&gt;后&lt;color="#44BF19"&gt;横扫&lt;/color&gt;敌人</description>
     <price>96</price>
     <index>18</index>
     <rankupWeaponID>20</rankupWeaponID>
@@ -255,7 +255,7 @@
     <attack>380.0</attack>
     <attackSpeed>0.9</attackSpeed>
     <attackRange>1.25</attackRange>
-    <description>变得最大后，横扫一圈的敌人</description>
+    <description>攻击：&lt;color="#44BF19"&gt;380+16%&lt;/color&gt;最大生命 攻速：&lt;color="#44BF19"&gt;0.9&lt;/color&gt;次/秒 范围：&lt;color="#44BF19"&gt;较小&lt;/color&gt; &lt;color="#44BF19"&gt;变的最大&lt;/color&gt;后&lt;color="#44BF19"&gt;横扫一圈&lt;/color&gt;敌人</description>
     <price>224</price>
     <index>19</index>
     <rankupWeaponID>-1</rankupWeaponID>

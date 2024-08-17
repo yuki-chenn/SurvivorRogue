@@ -143,8 +143,8 @@ MonoBehaviour:
   "\u653B\u51FB\u98DE\u884C\u7269": {fileID: 3830704012790628189, guid: 08cb9aa8991211746b659488ebe5dd9e, type: 3}
   "\u653B\u51FB\u7269\u751F\u6210\u70B9": {fileID: 8926477564386750134}
   angleOffset: 20
-  "\u529B\u91CF\u500D\u7387": 0.4
-  "\u667A\u529B\u500D\u7387": 0.4
+  "\u529B\u91CF\u500D\u7387": 0.32
+  "\u667A\u529B\u500D\u7387": 0.32
   arrowCount: 7
 --- !u!1 &8926477564386750133
 GameObject:

@@ -121,7 +121,7 @@ MonoBehaviour:
   "\u653B\u51FB\u7269": {fileID: 4569581664384798581, guid: d280dcd6b3a57584c92d26b7538fabbc, type: 3}
   "\u653B\u51FB\u7269\u751F\u6210\u70B9": {fileID: 7488189381185135319}
   "\u529B\u91CF\u500D\u7387": 0.7
-  "\u751F\u547D\u500D\u7387": 0.15
+  "\u751F\u547D\u500D\u7387": 0.12
 --- !u!1 &7488189381185135316
 GameObject:
   m_ObjectHideFlags: 0
