@@ -100,6 +100,7 @@ public class Player : BaseCharacter
             }
         }
         #endregion
+
     }
 
     public virtual void OnPlayerReset(){}

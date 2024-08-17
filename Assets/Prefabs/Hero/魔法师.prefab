@@ -34527,7 +34527,7 @@ MonoBehaviour:
     luck: 5
     maxDodgeRate: 25
     maxCriticalRate: 30
-  "\u6280\u80FD\u51B7\u5374\u65F6\u95F4": 0
+  "\u6280\u80FD\u51B7\u5374\u65F6\u95F4": 7
   skillGo: {fileID: 542373770051584307, guid: bd1021b7e9f28c34093c9c9cd2145168, type: 3}
   passiveEffect: {fileID: 970275792320819225}
 --- !u!1 &8678578543689545600
