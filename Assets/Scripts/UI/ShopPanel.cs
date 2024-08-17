@@ -294,7 +294,9 @@ public class ShopPanel : MonoBehaviour
         Image bg = go.GetComponent<Image>();
         Image border = go.transform.Find("Border").GetComponent<Image>();
 
-        Image imgIcon = go.transform.Find("Item/Icon").GetComponent<Image>();
+        Image imgIcon = go.transform.Find("Item/Icon/ItemIcon").GetComponent<Image>();
+        Image imgIconBorder = go.transform.Find("Item/Icon").GetComponent<Image>();
+        Image imgIconBg = go.transform.Find("Item/Icon/Bg").GetComponent<Image>();
         Text txtName = go.transform.Find("Item/Name").GetComponent<Text>();
         Text txtRank = go.transform.Find("Item/Rank").GetComponent<Text>();
         TextMeshProUGUI txtPrice = go.transform.Find("Item/Price").GetComponent<TextMeshProUGUI>();
@@ -310,7 +312,8 @@ public class ShopPanel : MonoBehaviour
             WeaponTplInfo info = TplUtil.GetWeaponMap()[gameData.selectionsId[index]];
             bg.color = Constants.RANK_COLOR_BG[info.Rank];
             border.sprite = AssetManager.Instance.商店武器道具购买等级边框[info.Rank - 1];
-
+            imgIconBg.sprite = AssetManager.Instance.武器道具背景[info.Rank - 1];
+            imgIconBorder.sprite = AssetManager.Instance.武器道具等级边框[info.Rank - 1];
             imgIcon.sprite = AssetManager.Instance.weaponSprite[info.Index];
             txtName.text = info.Name;
             txtRank.text = Constants.RANK_NAME[info.Rank];
@@ -326,7 +329,8 @@ public class ShopPanel : MonoBehaviour
             ItemTplInfo info = TplUtil.GetItemMap()[gameData.selectionsId[index]];
             bg.color = Constants.RANK_COLOR_BG[info.Rank];
             border.sprite = AssetManager.Instance.商店武器道具购买等级边框[info.Rank - 1];
-
+            imgIconBg.sprite = AssetManager.Instance.武器道具背景[info.Rank - 1];
+            imgIconBorder.sprite = AssetManager.Instance.武器道具等级边框[info.Rank - 1];
             imgIcon.sprite = AssetManager.Instance.itemSprite[info.Index];
             txtName.text = info.Name;
             txtRank.text = Constants.RANK_NAME[info.Rank];

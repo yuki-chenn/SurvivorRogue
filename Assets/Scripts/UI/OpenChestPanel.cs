@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using Survivor.Template;
 using Survivor.Utils;
+using TMPro;
 
 public class OpenChestPanel : MonoBehaviour
 {
@@ -16,7 +17,11 @@ public class OpenChestPanel : MonoBehaviour
     private Button btnSale;
 
     private Image imgIcon;
-    private Text txtSalePrice;
+    private Image imgIconBg;
+    private Image imgIconBorder;
+    private Image imgItem;
+    private Image imgBorder;
+    private TextMeshProUGUI txtSalePrice;
     private Text txtName;
     private Text txtRank;
     private Text txtDescription;
@@ -41,13 +46,17 @@ public class OpenChestPanel : MonoBehaviour
         itemTrans = transform.Find("OpenChestItem");
 
         Transform item = itemTrans.Find("Item");
-        imgIcon = item.Find("Icon").GetComponent<Image>();
+        imgItem = item.GetComponent<Image>();
+        imgBorder = item.Find("Border").GetComponent<Image>();
+        imgIcon = item.Find("Icon/ItemIcon").GetComponent<Image>();
+        imgIconBorder = item.Find("Icon").GetComponent<Image>();
+        imgIconBg = item.Find("Icon/Bg").GetComponent<Image>();
         txtName = item.Find("Name").GetComponent<Text>();
         txtRank = item.Find("Rank").GetComponent<Text>();
         txtDescription = item.Find("DescriptionScroll/Viewport/Text").GetComponent<Text>();
 
         Transform buttons = itemTrans.Find("Btns");
-        txtSalePrice = buttons.Find("SaleBtn/Text").GetComponent<Text>();
+        txtSalePrice = buttons.Find("SaleBtn/Sale").GetComponent<TextMeshProUGUI>();
 
         btnKeep = buttons.Find("KeepBtn").GetComponent<Button>();
         btnKeep.onClick.AddListener(() =>
@@ -84,12 +93,16 @@ public class OpenChestPanel : MonoBehaviour
     private void RefreshItemInfo()
     {
         if (curItemId == -1) return;
+        imgItem.color = Constants.RANK_COLOR_BG[curItemInfo.Rank];
+        imgBorder.sprite = AssetManager.Instance.商店武器道具购买等级边框[curItemInfo.Rank - 1];
         imgIcon.sprite = AssetManager.Instance.itemSprite[curItemInfo.Index];
+        imgIconBg.sprite = AssetManager.Instance.武器道具背景[curItemInfo.Rank - 1];
+        imgIconBorder.sprite = AssetManager.Instance.武器道具等级边框[curItemInfo.Rank - 1];
         txtName.text = curItemInfo.Name;
         txtRank.text = Constants.RANK_NAME[curItemInfo.Rank];
         txtRank.color = Constants.RANK_COLOR[curItemInfo.Rank];
         txtDescription.text = curItemInfo.Description;
-        txtSalePrice.text = string.Format("出售：{0}", Constants.CHEST_SALE_PRICE_BY_RANK[curItemInfo.Rank]);
+        txtSalePrice.SetText(Constants.TMP_IMG_PREFIX + string.Format("{0}", Constants.CHEST_SALE_PRICE_BY_RANK[curItemInfo.Rank]));
         itemTrans.gameObject.SetActive(true);
     }
 
@@ -112,7 +125,17 @@ public class OpenChestPanel : MonoBehaviour
         {
             for (int i = 0; i < chestCount[rank - 2]; ++i)
             {
-                curItemId = GameManager.Instance.GetRandomItem((RankType)rank);
+                if(rank == 2)
+                {
+                    bool isRare = RandomUtil.IsProbabilityMet(0.6f);
+                    curItemId = isRare ? GameManager.Instance.GetRandomItem(RankType.Rare) :
+                        GameManager.Instance.GetRandomItem(RankType.Normal);
+                }
+                else
+                {
+                    curItemId = GameManager.Instance.GetRandomItem((RankType)rank);
+                }
+                
                 RefreshItemInfo();
                 yield return new WaitUntil(() => !itemTrans.gameObject.activeSelf);
             }

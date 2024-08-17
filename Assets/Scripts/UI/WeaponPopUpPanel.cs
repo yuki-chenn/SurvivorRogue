@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using Survivor.Template;
 using Survivor.Utils;
+using TMPro;
 
 public class WeaponPopUpPanel : MonoBehaviour
 {
@@ -18,9 +19,12 @@ public class WeaponPopUpPanel : MonoBehaviour
     private Button btnSale;
 
     private Image imgIcon;
-    private Text txtSalePrice;
+    private Image imgIconBg;
+    private Image imgIconBorder;
+    private TextMeshProUGUI txtSalePrice;
     private Text txtName;
     private Text txtDescription;
+    private Text txtRank;
 
     private int weaponIndex;
 
@@ -43,12 +47,15 @@ public class WeaponPopUpPanel : MonoBehaviour
         popup = transform.Find("PopUp");
 
         Transform item = popup.Find("Item");
-        imgIcon = item.Find("Icon").GetComponent<Image>();
+        imgIcon = item.Find("Icon/ItemIcon").GetComponent<Image>();
+        imgIconBorder = item.Find("Icon").GetComponent<Image>();
+        imgIconBg = item.Find("Icon/Bg").GetComponent<Image>();
         txtName = item.Find("Name").GetComponent<Text>();
         txtDescription = item.Find("DescriptionScroll/Viewport/Text").GetComponent<Text>();
+        txtRank = item.Find("Rank").GetComponent<Text>();
 
         Transform buttons = popup.Find("Btns");
-        txtSalePrice = buttons.Find("SaleBtn/Text").GetComponent<Text>();
+        txtSalePrice = buttons.Find("SaleBtn/Sale").GetComponent<TextMeshProUGUI>();
 
         btnRankup = buttons.Find("RankupBtn").GetComponent<Button>();
         btnRankup.onClick.AddListener(() =>
@@ -86,9 +93,13 @@ public class WeaponPopUpPanel : MonoBehaviour
     {
         btnRankup.gameObject.SetActive(GameManager.Instance.CanRankUp(weaponIndex));
         imgIcon.sprite = AssetManager.Instance.weaponSprite[info.Index];
+        imgIconBg.sprite = AssetManager.Instance.武器道具背景[info.Rank - 1];
+        imgIconBorder.sprite = AssetManager.Instance.武器道具等级边框[info.Rank - 1];
         txtName.text = info.Name;
         txtDescription.text = info.Description;
-        txtSalePrice.text = string.Format("出售：{0}", (int)(info.Price * gameData.saleDiscount));
+        txtRank.text = Constants.RANK_NAME[info.Rank];
+        txtRank.color = Constants.RANK_COLOR[info.Rank];
+        txtSalePrice.SetText(Constants.TMP_IMG_PREFIX + string.Format("{0}", (int)(info.Price * gameData.saleDiscount)));
     }
 
     private void Hide()

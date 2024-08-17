@@ -106,6 +106,8 @@ public class Constants
     public static int ONE_BOSS_WAVE = 10004;
     public static int[] NORMAL_WAVE = new int[] { 10001, 10002, 10003 };
 
+    public static string TMP_IMG_PREFIX = "<sprite=0>";
+
 }
 
 public struct LevelProbability

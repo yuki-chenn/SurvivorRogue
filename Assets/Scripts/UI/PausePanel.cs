@@ -15,7 +15,6 @@ public class PausePanel : MonoBehaviour
     private Button btnBackGame;
 
     private List<Text> txtAttr = new List<Text>();
-    private Text txtSalary;
 
     private void Awake()
     {
@@ -37,7 +36,6 @@ public class PausePanel : MonoBehaviour
         {
             txtAttr.Add(child.Find("AttrValue").GetComponent<Text>());
         }
-        txtSalary = transform.Find("Salary/Value").GetComponent<Text>();
 
         gameObject.SetActive(false);
     }
@@ -118,10 +116,11 @@ public class PausePanel : MonoBehaviour
             }
 
             var itemInfo = TplUtil.GetItemMap()[kvp.Key];
-
+            itemGo.GetComponent<Image>().sprite = AssetManager.Instance.武器道具等级边框[itemInfo.Rank - 1];
             itemGo.transform.Find("Icon").GetComponent<Image>().sprite =
                 AssetManager.Instance.itemSprite[itemInfo.Index];
             itemGo.transform.Find("Count").GetComponent<Text>().text = kvp.Value.ToString();
+            itemGo.transform.Find("Bg").GetComponent<Image>().sprite = AssetManager.Instance.武器道具背景[itemInfo.Rank - 1];
 
             itemGo.SetActive(true);
             index++;
@@ -148,7 +147,7 @@ public class PausePanel : MonoBehaviour
             txtAttr[7].text = attr.暴击伤害.ToString("F1") + "%";
             txtAttr[8].text = attr.移动速度.ToString("F0");
             txtAttr[9].text = attr.幸运.ToString("F0");
-            txtSalary.text = GameManager.Instance.gameData.salary.ToString();
+            txtAttr[10].text = GameManager.Instance.gameData.salary.ToString();
         }
 
         if (GameManager.Instance.fsm.CurrentStateID == StateID.BuyState)
@@ -163,7 +162,7 @@ public class PausePanel : MonoBehaviour
             txtAttr[7].text = GameManager.Instance.gameData.playerAttr.暴击伤害.ToString("F1") + "%";
             txtAttr[8].text = GameManager.Instance.gameData.playerAttr.移动速度.ToString("F0");
             txtAttr[9].text = GameManager.Instance.gameData.playerAttr.幸运.ToString("F0");
-            txtSalary.text = GameManager.Instance.gameData.salary.ToString();
+            txtAttr[10].text = GameManager.Instance.gameData.salary.ToString();
         }
 
 

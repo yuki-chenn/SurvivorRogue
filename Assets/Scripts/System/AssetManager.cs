@@ -26,6 +26,8 @@ public class AssetManager : ScriptableObject
     public Sprite shopItemUnLockSprite;
 
     public Sprite[] 商店武器道具购买等级边框;
+    public Sprite[] 武器道具等级边框;
+    public Sprite[] 武器道具背景;
 
     public GameObject 英雄选择头像模板;
     public GameObject 武器道具选择模板;
