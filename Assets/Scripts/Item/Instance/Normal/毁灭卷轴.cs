@@ -1,12 +1,4 @@
-using Survivor.Template;
-using Survivor.Utils;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using DG.Tweening;
-
-// ±©»÷ÉËº¦+5%£¬±©»÷ÂÊ-3%
+// ±©»÷ÉËº¦+4%£¬±©»÷ÂÊ-2%
 public class »ÙÃğ¾íÖá : BaseItem
 {
     public override int ID => 17;
@@ -14,8 +6,8 @@ public class »ÙÃğ¾íÖá : BaseItem
     public override void OnGet()
     {
         base.OnGet();
-        attr.±©»÷ÉËº¦ += 5;
-        attr.±©»÷ÂÊ -= 3;
+        attr.±©»÷ÉËº¦ += 4;
+        attr.±©»÷ÂÊ -= 2;
     }
 
     public override void OnDiscard()

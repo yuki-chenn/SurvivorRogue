@@ -1,14 +1,14 @@
 
-// ±©»÷ÂÊ+2%£¬±©»÷ÉËº¦-4%
-public class Òªº¦¼ıÍ· : BaseItem
+// ±©»÷ÉËº¦+2%£¬ÖÇÁ¦-1
+public class Á÷Ñª½£ : BaseItem
 {
-    public override int ID => 15;
+    public override int ID => 18;
 
     public override void OnGet()
     {
         base.OnGet();
-        attr.±©»÷ÂÊ += 2;
-        attr.±©»÷ÉËº¦ -= 4;
+        attr.±©»÷ÉËº¦ += 2;
+        attr.ÖÇÁ¦ -= 1;
     }
 
     public override void OnDiscard()

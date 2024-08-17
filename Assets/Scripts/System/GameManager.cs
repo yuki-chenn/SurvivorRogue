@@ -640,6 +640,7 @@ public class GameManager : PersistentSingleton<GameManager>
                 {
                     if (gameData.curWave != 0)
                     {
+                        DisablePlayer();
                         fsm.PerformTransition(Transition.ContinueGame);
                     }
                     else

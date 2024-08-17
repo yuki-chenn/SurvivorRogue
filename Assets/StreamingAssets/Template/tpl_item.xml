@@ -5,7 +5,7 @@
     <ID>1</ID>
     <name>金币护符</name>
     <rank>2</rank>
-    <description>每次受到攻击时，有10%的概率生成1枚金币。</description>
+    <description>每次受到攻击时，有&lt;color="#44BF19"&gt;10%&lt;/color&gt;的概率生成&lt;color="#44BF19"&gt;1&lt;/color&gt;枚&lt;color="#FBE031"&gt;金币&lt;/color&gt;</description>
     <price>50</price>
     <index>0</index>
     <initial>1</initial>
@@ -15,7 +15,7 @@
     <ID>2</ID>
     <name>血之契约</name>
     <rank>1</rank>
-    <description>最大生命+40，但是下个波次开始时，生命值只有20%</description>
+    <description>最大生命&lt;color="#44BF19"&gt;+40&lt;/color&gt;，但是下个波次开始时，生命值只有&lt;color="#FF5F5F"&gt;20%&lt;/color&gt;</description>
     <price>20</price>
     <index>1</index>
     <initial>0</initial>
@@ -25,7 +25,7 @@
     <ID>3</ID>
     <name>生命宝石</name>
     <rank>1</rank>
-    <description>最大生命+30，闪避率-2%</description>
+    <description>最大生命&lt;color="#44BF19"&gt;+30&lt;/color&gt; 闪避率&lt;color="#FF5F5F"&gt;-2%&lt;/color&gt;</description>
     <price>21</price>
     <index>2</index>
     <initial>0</initial>
@@ -35,7 +35,7 @@
     <ID>4</ID>
     <name>生命铠甲</name>
     <rank>1</rank>
-    <description>最大生命+20，移动速度-2</description>
+    <description>最大生命&lt;color="#44BF19"&gt;+20&lt;/color&gt; 移动速度&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>18</price>
     <index>3</index>
     <initial>0</initial>
@@ -45,7 +45,7 @@
     <ID>5</ID>
     <name>疾风之戒</name>
     <rank>1</rank>
-    <description>攻击速度+2，力量-3</description>
+    <description>攻击速度&lt;color="#44BF19"&gt;+2&lt;/color&gt; 力量&lt;color="#FF5F5F"&gt;-3&lt;/color&gt;</description>
     <price>20</price>
     <index>4</index>
     <initial>0</initial>
@@ -55,7 +55,7 @@
     <ID>6</ID>
     <name>迅捷之刃</name>
     <rank>1</rank>
-    <description>攻击速度+1，暴击率-1%</description>
+    <description>攻击速度&lt;color="#44BF19"&gt;+1&lt;/color&gt; 暴击率&lt;color="#FF5F5F"&gt;-1%&lt;/color&gt;</description>
     <price>17</price>
     <index>5</index>
     <initial>0</initial>
@@ -65,7 +65,7 @@
     <ID>7</ID>
     <name>兽牙项链</name>
     <rank>1</rank>
-    <description>力量+4，防御-2</description>
+    <description>力量&lt;color="#44BF19"&gt;+4&lt;/color&gt; 防御&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>22</price>
     <index>6</index>
     <initial>0</initial>
@@ -75,7 +75,7 @@
     <ID>8</ID>
     <name>力量护腕</name>
     <rank>1</rank>
-    <description>力量+3，智力-2</description>
+    <description>力量&lt;color="#44BF19"&gt;+3&lt;/color&gt; 智力&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>20</price>
     <index>7</index>
     <initial>0</initial>
@@ -85,7 +85,7 @@
     <ID>9</ID>
     <name>古法师项链</name>
     <rank>1</rank>
-    <description>智力+4，暴击伤害-2%</description>
+    <description>智力&lt;color="#44BF19"&gt;+4&lt;/color&gt; 暴击伤害&lt;color="#FF5F5F"&gt;-2%&lt;/color&gt;</description>
     <price>22</price>
     <index>8</index>
     <initial>0</initial>
@@ -95,7 +95,7 @@
     <ID>10</ID>
     <name>智慧水晶</name>
     <rank>1</rank>
-    <description>智力+3，力量-2</description>
+    <description>智力&lt;color="#44BF19"&gt;+3&lt;/color&gt; 力量&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>20</price>
     <index>9</index>
     <initial>0</initial>
@@ -105,7 +105,7 @@
     <ID>11</ID>
     <name>守护之盾</name>
     <rank>1</rank>
-    <description>防御+4，幸运-3</description>
+    <description>防御&lt;color="#44BF19"&gt;+4&lt;/color&gt; 幸运&lt;color="#FF5F5F"&gt;-3&lt;/color&gt;</description>
     <price>21</price>
     <index>10</index>
     <initial>0</initial>
@@ -115,7 +115,7 @@
     <ID>12</ID>
     <name>铁块头盔</name>
     <rank>1</rank>
-    <description>防御+2，攻击速度-2</description>
+    <description>防御&lt;color="#44BF19"&gt;+2&lt;/color&gt; 攻击速度&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>15</price>
     <index>11</index>
     <initial>0</initial>
@@ -125,7 +125,7 @@
     <ID>13</ID>
     <name>敏捷斗篷</name>
     <rank>1</rank>
-    <description>闪避率+2%，防御-5</description>
+    <description>闪避率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 防御&lt;color="#FF5F5F"&gt;-3&lt;/color&gt;</description>
     <price>22</price>
     <index>12</index>
     <initial>0</initial>
@@ -135,7 +135,7 @@
     <ID>14</ID>
     <name>魔法披风</name>
     <rank>1</rank>
-    <description>闪避率+1%，攻击速度-2</description>
+    <description>闪避率&lt;color="#44BF19"&gt;+1%&lt;/color&gt; 攻击速度&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>18</price>
     <index>13</index>
     <initial>0</initial>
@@ -145,7 +145,7 @@
     <ID>15</ID>
     <name>要害箭头</name>
     <rank>1</rank>
-    <description>暴击率+2%，暴击伤害-5%</description>
+    <description>暴击率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 暴击伤害&lt;color="#FF5F5F"&gt;-4%&lt;/color&gt;</description>
     <price>23</price>
     <index>14</index>
     <initial>0</initial>
@@ -155,7 +155,7 @@
     <ID>16</ID>
     <name>精准符文</name>
     <rank>1</rank>
-    <description>暴击率+1%，力量-2，智力-2</description>
+    <description>暴击率&lt;color="#44BF19"&gt;+1%&lt;/color&gt; 力量&lt;color="#FF5F5F"&gt;-2&lt;/color&gt; 智力&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>21</price>
     <index>15</index>
     <initial>0</initial>
@@ -165,7 +165,7 @@
     <ID>17</ID>
     <name>毁灭卷轴</name>
     <rank>1</rank>
-    <description>暴击伤害+5%，暴击率-3%</description>
+    <description>暴击伤害&lt;color="#44BF19"&gt;+4%&lt;/color&gt; 暴击率&lt;color="#FF5F5F"&gt;-2%&lt;/color&gt;</description>
     <price>23</price>
     <index>16</index>
     <initial>0</initial>
@@ -173,9 +173,9 @@
   </data>
   <data>
     <ID>18</ID>
-    <name>嗜血之剑</name>
+    <name>流血剑</name>
     <rank>1</rank>
-    <description>暴击伤害+2%，智力-3</description>
+    <description>暴击伤害&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 智力&lt;color="#FF5F5F"&gt;-1&lt;/color&gt;</description>
     <price>21</price>
     <index>17</index>
     <initial>0</initial>
@@ -185,7 +185,7 @@
     <ID>19</ID>
     <name>疾步之靴</name>
     <rank>1</rank>
-    <description>移动速度+3，最大生命-20</description>
+    <description>移动速度&lt;color="#44BF19"&gt;+3&lt;/color&gt; 最大生命&lt;color="#FF5F5F"&gt;-20&lt;/color&gt;</description>
     <price>19</price>
     <index>18</index>
     <initial>0</initial>
@@ -195,7 +195,7 @@
     <ID>20</ID>
     <name>迅捷药水</name>
     <rank>1</rank>
-    <description>移动速度+2，攻击速度-2</description>
+    <description>移动速度&lt;color="#44BF19"&gt;+2&lt;/color&gt; 攻击速度&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>17</price>
     <index>19</index>
     <initial>0</initial>
@@ -205,7 +205,7 @@
     <ID>21</ID>
     <name>幸运药水</name>
     <rank>1</rank>
-    <description>幸运+7，收入-5</description>
+    <description>幸运&lt;color="#44BF19"&gt;+7&lt;/color&gt; 收入&lt;color="#FF5F5F"&gt;-5&lt;/color&gt;</description>
     <price>25</price>
     <index>20</index>
     <initial>0</initial>
@@ -215,7 +215,7 @@
     <ID>22</ID>
     <name>幸运草</name>
     <rank>1</rank>
-    <description>幸运+3，移动速度-3</description>
+    <description>幸运&lt;color="#44BF19"&gt;+3&lt;/color&gt; 移动速度&lt;color="#FF5F5F"&gt;-3&lt;/color&gt;</description>
     <price>15</price>
     <index>21</index>
     <initial>0</initial>
@@ -225,7 +225,7 @@
     <ID>23</ID>
     <name>诅咒金币</name>
     <rank>1</rank>
-    <description>收入+7，幸运-5</description>
+    <description>收入&lt;color="#44BF19"&gt;+7&lt;/color&gt; 幸运&lt;color="#FF5F5F"&gt;-5&lt;/color&gt;</description>
     <price>20</price>
     <index>22</index>
     <initial>0</initial>
@@ -235,7 +235,7 @@
     <ID>24</ID>
     <name>纯金锭</name>
     <rank>1</rank>
-    <description>收入+5，最大生命-20</description>
+    <description>收入&lt;color="#44BF19"&gt;+5&lt;/color&gt; 最大生命&lt;color="#FF5F5F"&gt;-20&lt;/color&gt;</description>
     <price>15</price>
     <index>23</index>
     <initial>0</initial>
@@ -245,7 +245,7 @@
     <ID>25</ID>
     <name>科技装甲</name>
     <rank>2</rank>
-    <description>生命+30，防御+5，智力-2</description>
+    <description>生命&lt;color="#44BF19"&gt;+30&lt;/color&gt; 防御&lt;color="#44BF19"&gt;+5&lt;/color&gt; 智力&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>40</price>
     <index>24</index>
     <initial>0</initial>
@@ -255,7 +255,7 @@
     <ID>26</ID>
     <name>敏捷项链</name>
     <rank>2</rank>
-    <description>攻击速度+4，移动速度+3，防御-2</description>
+    <description>攻击速度&lt;color="#44BF19"&gt;+4&lt;/color&gt; 移动速度&lt;color="#44BF19"&gt;+3&lt;/color&gt; 防御&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>50</price>
     <index>25</index>
     <initial>0</initial>
@@ -265,7 +265,7 @@
     <ID>27</ID>
     <name>力量宝石</name>
     <rank>2</rank>
-    <description>力量+6，最大生命+10，闪避率-2%</description>
+    <description>力量&lt;color="#44BF19"&gt;+6&lt;/color&gt; 最大生命&lt;color="#44BF19"&gt;+10&lt;/color&gt; 闪避率&lt;color="#FF5F5F"&gt;-2%&lt;/color&gt;</description>
     <price>45</price>
     <index>26</index>
     <initial>0</initial>
@@ -275,7 +275,7 @@
     <ID>28</ID>
     <name>智慧戒指</name>
     <rank>2</rank>
-    <description>智力+6，攻击速度+2，暴击率-2%</description>
+    <description>智力&lt;color="#44BF19"&gt;+6&lt;/color&gt; 攻击速度&lt;color="#44BF19"&gt;+2&lt;/color&gt; 暴击率&lt;color="#FF5F5F"&gt;-2%&lt;/color&gt;</description>
     <price>45</price>
     <index>27</index>
     <initial>0</initial>
@@ -285,7 +285,7 @@
     <ID>29</ID>
     <name>重装钢铠</name>
     <rank>2</rank>
-    <description>防御+6，暴击率+2%，移动速度-3</description>
+    <description>防御&lt;color="#44BF19"&gt;+6&lt;/color&gt; 暴击率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 移动速度&lt;color="#FF5F5F"&gt;-3&lt;/color&gt;</description>
     <price>48</price>
     <index>28</index>
     <initial>0</initial>
@@ -295,7 +295,7 @@
     <ID>30</ID>
     <name>魔导书</name>
     <rank>2</rank>
-    <description>闪避率+3%，智力+3，最大生命-10</description>
+    <description>闪避率&lt;color="#44BF19"&gt;+3%&lt;/color&gt; 智力&lt;color="#44BF19"&gt;+3&lt;/color&gt; 最大生命&lt;color="#FF5F5F"&gt;-10&lt;/color&gt;</description>
     <price>48</price>
     <index>29</index>
     <initial>0</initial>
@@ -305,7 +305,7 @@
     <ID>31</ID>
     <name>放大镜</name>
     <rank>2</rank>
-    <description>暴击率+5%，暴击伤害+3%，力量-2</description>
+    <description>暴击率&lt;color="#44BF19"&gt;+5%&lt;/color&gt; 暴击伤害&lt;color="#44BF19"&gt;+3%&lt;/color&gt; 力量&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>42</price>
     <index>30</index>
     <initial>0</initial>
@@ -315,7 +315,7 @@
     <ID>32</ID>
     <name>冰砾</name>
     <rank>2</rank>
-    <description>暴击伤害+8%，力量+3，攻击速度-2</description>
+    <description>暴击伤害&lt;color="#44BF19"&gt;+8%&lt;/color&gt; 力量&lt;color="#44BF19"&gt;+3&lt;/color&gt; 攻击速度&lt;color="#FF5F5F"&gt;-2&lt;/color&gt;</description>
     <price>42</price>
     <index>31</index>
     <initial>0</initial>
@@ -325,7 +325,7 @@
     <ID>33</ID>
     <name>陨铁鸟的羽毛</name>
     <rank>2</rank>
-    <description>移动速度+4，闪避+2%，暴击伤害-3%</description>
+    <description>移动速度&lt;color="#44BF19"&gt;+4&lt;/color&gt; 闪避率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 暴击伤害&lt;color="#FF5F5F"&gt;-3%&lt;/color&gt;</description>
     <price>50</price>
     <index>32</index>
     <initial>0</initial>
@@ -335,7 +335,7 @@
     <ID>34</ID>
     <name>幸运骰子</name>
     <rank>2</rank>
-    <description>幸运+9，暴击率+3%，闪避率+1%，收入-7</description>
+    <description>幸运&lt;color="#44BF19"&gt;+9&lt;/color&gt; 暴击率&lt;color="#44BF19"&gt;+3%&lt;/color&gt; 闪避率&lt;color="#44BF19"&gt;+1%&lt;/color&gt; 收入&lt;color="#FF5F5F"&gt;-7&lt;/color&gt;</description>
     <price>64</price>
     <index>33</index>
     <initial>0</initial>
@@ -345,7 +345,7 @@
     <ID>35</ID>
     <name>第一袋金</name>
     <rank>2</rank>
-    <description>收入+12，力量+2，智力+2，幸运-8</description>
+    <description>收入&lt;color="#44BF19"&gt;+12&lt;/color&gt; 力量&lt;color="#44BF19"&gt;+2&lt;/color&gt; 智力&lt;color="#44BF19"&gt;+2&lt;/color&gt; 幸运&lt;color="#FF5F5F"&gt;-8&lt;/color&gt;</description>
     <price>60</price>
     <index>34</index>
     <initial>0</initial>
@@ -355,7 +355,7 @@
     <ID>36</ID>
     <name>深渊龙铠</name>
     <rank>3</rank>
-    <description>最大生命+40，防御+7，闪避率+2，攻击速度-4</description>
+    <description>最大生命&lt;color="#44BF19"&gt;+40&lt;/color&gt; 防御&lt;color="#44BF19"&gt;+7&lt;/color&gt; 闪避率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 攻击速度&lt;color="#FF5F5F"&gt;-4&lt;/color&gt;</description>
     <price>132</price>
     <index>35</index>
     <initial>0</initial>
@@ -365,7 +365,7 @@
     <ID>37</ID>
     <name>全能经文</name>
     <rank>3</rank>
-    <description>力量+10，智力+10，暴击率+2%，防御-8</description>
+    <description>力量&lt;color="#44BF19"&gt;+10&lt;/color&gt; 智力&lt;color="#44BF19"&gt;+10&lt;/color&gt; 暴击率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 防御&lt;color="#FF5F5F"&gt;-8&lt;/color&gt;</description>
     <price>135</price>
     <index>36</index>
     <initial>0</initial>
@@ -375,7 +375,7 @@
     <ID>38</ID>
     <name>追风符文</name>
     <rank>3</rank>
-    <description>攻击速度+3，移动速度+3，最大生命+10，暴击率-3%</description>
+    <description>攻击速度&lt;color="#44BF19"&gt;+3&lt;/color&gt; 移动速度&lt;color="#44BF19"&gt;+3&lt;/color&gt; 最大生命&lt;color="#44BF19"&gt;+10&lt;/color&gt; 暴击率&lt;color="#FF5F5F"&gt;-3%&lt;/color&gt;</description>
     <price>129</price>
     <index>37</index>
     <initial>0</initial>
@@ -385,7 +385,7 @@
     <ID>39</ID>
     <name>诅咒药水</name>
     <rank>3</rank>
-    <description>暴击率+5%，暴击伤害+7%，攻击速度+2，幸运-4</description>
+    <description>暴击率&lt;color="#44BF19"&gt;+5%&lt;/color&gt; 暴击伤害&lt;color="#44BF19"&gt;+7%&lt;/color&gt; 攻击速度&lt;color="#44BF19"&gt;+2&lt;/color&gt; 幸运&lt;color="#FF5F5F"&gt;-4&lt;/color&gt;</description>
     <price>131</price>
     <index>38</index>
     <initial>0</initial>
@@ -395,7 +395,7 @@
     <ID>40</ID>
     <name>圣诞礼物</name>
     <rank>3</rank>
-    <description>收入+7，幸运+5，暴击伤害+5%，最大生命-50</description>
+    <description>收入&lt;color="#44BF19"&gt;+7&lt;/color&gt; 幸运&lt;color="#44BF19"&gt;+5&lt;/color&gt; 暴击伤害&lt;color="#44BF19"&gt;+5%&lt;/color&gt; 最大生命&lt;color="#FF5F5F"&gt;-50&lt;/color&gt;</description>
     <price>146</price>
     <index>39</index>
     <initial>0</initial>
@@ -405,7 +405,7 @@
     <ID>41</ID>
     <name>自然之力</name>
     <rank>4</rank>
-    <description>最大生命+20，攻击速度+3，力量+5，智力+5，防御+3，闪避率+2%，暴击率+2%，暴击伤害+4%，移动速度+3，幸运+4</description>
+    <description>最大生命&lt;color="#44BF19"&gt;+20&lt;/color&gt; 攻击速度&lt;color="#44BF19"&gt;+3&lt;/color&gt; 力量&lt;color="#44BF19"&gt;+5&lt;/color&gt; 智力&lt;color="#44BF19"&gt;+5&lt;/color&gt; 防御&lt;color="#44BF19"&gt;+3&lt;/color&gt; 闪避率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 暴击率&lt;color="#44BF19"&gt;+2%&lt;/color&gt; 暴击伤害&lt;color="#44BF19"&gt;+4%&lt;/color&gt; 移动速度&lt;color="#44BF19"&gt;+3&lt;/color&gt; 幸运&lt;color="#44BF19"&gt;+4&lt;/color&gt;</description>
     <price>286</price>
     <index>40</index>
     <initial>0</initial>
@@ -415,7 +415,7 @@
     <ID>42</ID>
     <name>吸金戒指</name>
     <rank>2</rank>
-    <description>收入+2，拾取金币的范围增大。</description>
+    <description>收入&lt;color="#44BF19"&gt;+2&lt;/color&gt; 拾取&lt;color="#FBE031"&gt;金币&lt;/color&gt;的范围&lt;color="#44BF19"&gt;增大&lt;/color&gt;</description>
     <price>42</price>
     <index>41</index>
     <initial>0</initial>
@@ -425,7 +425,7 @@
     <ID>43</ID>
     <name>收集之握</name>
     <rank>4</rank>
-    <description>吸取所有的掉落物品。</description>
+    <description>吸取&lt;color="#44BF19"&gt;所有&lt;/color&gt;的&lt;color="#FBE031"&gt;掉落物&lt;/color&gt;</description>
     <price>298</price>
     <index>42</index>
     <initial>0</initial>
@@ -435,7 +435,7 @@
     <ID>44</ID>
     <name>筹码50</name>
     <rank>4</rank>
-    <description>每次刷新商店时，有50%的概率使下次刷新免费。</description>
+    <description>每次&lt;color="#FBE031"&gt;刷新&lt;/color&gt;商店时，有&lt;color="#44BF19"&gt;50%&lt;/color&gt;的概率使下次刷新&lt;color="#44BF19"&gt;免费&lt;/color&gt;</description>
     <price>293</price>
     <index>43</index>
     <initial>0</initial>
@@ -445,7 +445,7 @@
     <ID>45</ID>
     <name>时间之瓶</name>
     <rank>4</rank>
-    <description>攻击速度会影响技能的冷却时间，攻击速度越快，冷却时间越短。（冷却时间不会大于原有的时间）</description>
+    <description>攻击速度会影响技能的&lt;color="#FBE031"&gt;冷却时间&lt;/color&gt;，攻击速度越快，冷却时间&lt;color="#44BF19"&gt;越短&lt;/color&gt;（冷却时间不会大于原有的时间）</description>
     <price>290</price>
     <index>44</index>
     <initial>0</initial>
@@ -455,7 +455,7 @@
     <ID>46</ID>
     <name>财运背包</name>
     <rank>4</rank>
-    <description>每拾取300金币，获得一个随机品质的宝箱。</description>
+    <description>每拾取300金币，获得一个随机品质的&lt;color="#FBE031"&gt;宝箱&lt;/color&gt;</description>
     <price>291</price>
     <index>45</index>
     <initial>0</initial>
@@ -465,7 +465,7 @@
     <ID>47</ID>
     <name>双倍奇迹</name>
     <rank>4</rank>
-    <description>怪物死亡时，有几率（暴击率）使得经验值和金币数量变为两倍，boss除外。</description>
+    <description>怪物死亡时，有几率（暴击率）使得&lt;color="#FBE031"&gt;经验值&lt;/color&gt;和&lt;color="#FBE031"&gt;金币&lt;/color&gt;数量变为&lt;color="#44BF19"&gt;两倍&lt;/color&gt;，boss除外</description>
     <price>288</price>
     <index>46</index>
     <initial>0</initial>
@@ -475,7 +475,7 @@
     <ID>48</ID>
     <name>千年天秤</name>
     <rank>4</rank>
-    <description>你的力量和智力的数值永远保持一致为两者中较高的一个。</description>
+    <description>你的力量和智力的数值永远保持&lt;color="#44BF19"&gt;一致&lt;/color&gt;为两者中&lt;color="#44BF19"&gt;较高&lt;/color&gt;的一个。</description>
     <price>279</price>
     <index>47</index>
     <initial>0</initial>
@@ -485,7 +485,7 @@
     <ID>49</ID>
     <name>极限猎手</name>
     <rank>4</rank>
-    <description>你的闪避率和暴击率上限提高为80%，闪避+10%，暴击+10%</description>
+    <description>你的闪避率和暴击率上限提高为&lt;color="#44BF19"&gt;80%&lt;/color&gt; 闪避&lt;color="#44BF19"&gt;+10%&lt;/color&gt; 暴击&lt;color="#44BF19"&gt;+10%&lt;/color&gt;</description>
     <price>319</price>
     <index>48</index>
     <initial>0</initial>
@@ -495,7 +495,7 @@
     <ID>50</ID>
     <name>不灭圣辉</name>
     <rank>4</rank>
-    <description>当你死亡时，立刻复活并恢复全部生命，并重置技能冷却，只能触发一次。</description>
+    <description>当你死亡时，立刻&lt;color="#44BF19"&gt;复活&lt;/color&gt;并恢复全部生命，并重置技能冷却，只能触发一次</description>
     <price>325</price>
     <index>49</index>
     <initial>0</initial>
@@ -505,7 +505,7 @@
     <ID>51</ID>
     <name>永恒血冠</name>
     <rank>4</rank>
-    <description>当拾取血瓶时，溢出恢复生命的10%将转换为最大生命。（无尽模式不生效）</description>
+    <description>当拾取&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;时，溢出恢复生命的&lt;color="#44BF19"&gt;10%&lt;/color&gt;将转换为最大生命（无尽模式不生效）</description>
     <price>297</price>
     <index>50</index>
     <initial>0</initial>
@@ -515,7 +515,7 @@
     <ID>52</ID>
     <name>文具</name>
     <rank>1</rank>
-    <description>击败怪物获得的经验增加20%。</description>
+    <description>击败怪物获得的经验增加&lt;color="#44BF19"&gt;20%&lt;/color&gt;</description>
     <price>23</price>
     <index>51</index>
     <initial>0</initial>
@@ -525,7 +525,7 @@
     <ID>53</ID>
     <name>生命番茄</name>
     <rank>1</rank>
-    <description>血瓶的治疗效果增加5%。</description>
+    <description>血瓶的治疗效果增加&lt;color="#44BF19"&gt;5%&lt;/color&gt;</description>
     <price>18</price>
     <index>52</index>
     <initial>0</initial>
@@ -535,7 +535,7 @@
     <ID>54</ID>
     <name>士兵棋子</name>
     <rank>1</rank>
-    <description>下一场战斗伤害增加10%，在战斗结束后自动出售该道具</description>
+    <description>下一场战斗伤害增加&lt;color="#44BF19"&gt;10%&lt;/color&gt;，在战斗结束后自动&lt;color="#FBE031"&gt;出售&lt;/color&gt;该道具</description>
     <price>16</price>
     <index>53</index>
     <initial>0</initial>
@@ -545,7 +545,7 @@
     <ID>55</ID>
     <name>大金牙</name>
     <rank>1</rank>
-    <description>出售道具或者武器时，额外获得 2+当前波次/4 个金币</description>
+    <description>出售道具或者武器时，额外获得&lt;color="#44BF19"&gt;2+当前波次/4&lt;/color&gt;个&lt;color="#FBE031"&gt;金币&lt;/color&gt;</description>
     <price>21</price>
     <index>54</index>
     <initial>0</initial>
@@ -555,7 +555,7 @@
     <ID>56</ID>
     <name>经验瓶</name>
     <rank>1</rank>
-    <description>立即获得500点经验值</description>
+    <description>立即获得&lt;color="#44BF19"&gt;500&lt;/color&gt;点经验值</description>
     <price>15</price>
     <index>55</index>
     <initial>0</initial>
@@ -565,7 +565,7 @@
     <ID>57</ID>
     <name>主教棋子</name>
     <rank>2</rank>
-    <description>下一场战斗伤害增加40%，在战斗结束后自动出售该道具</description>
+    <description>下一场战斗伤害增加&lt;color="#44BF19"&gt;40%&lt;/color&gt;，在战斗结束后自动&lt;color="#FBE031"&gt;出售&lt;/color&gt;该道具</description>
     <price>40</price>
     <index>56</index>
     <initial>0</initial>
@@ -575,7 +575,7 @@
     <ID>58</ID>
     <name>皇后棋子</name>
     <rank>3</rank>
-    <description>下一场战斗伤害增加80%，在战斗结束后自动出售该道具</description>
+    <description>下一场战斗伤害增加&lt;color="#44BF19"&gt;80%&lt;/color&gt;，在战斗结束后自动&lt;color="#FBE031"&gt;出售&lt;/color&gt;该道具</description>
     <price>120</price>
     <index>57</index>
     <initial>0</initial>
@@ -585,7 +585,7 @@
     <ID>59</ID>
     <name>破敌战斧</name>
     <rank>2</rank>
-    <description>释放主动技能后，5s内造成的伤害额外提高4%</description>
+    <description>释放&lt;color="#FBE031"&gt;主动技能&lt;/color&gt;后，5s内造成的伤害额外提高&lt;color="#44BF19"&gt;4%&lt;/color&gt;</description>
     <price>48</price>
     <index>58</index>
     <initial>0</initial>
@@ -595,7 +595,7 @@
     <ID>60</ID>
     <name>陨铁鸟</name>
     <rank>2</rank>
-    <description>释放主动技能后，5s内移动速度增加10%</description>
+    <description>释放&lt;color="#FBE031"&gt;主动技能&lt;/color&gt;后，后，5s内移动速度增加&lt;color="#44BF19"&gt;10%&lt;/color&gt;</description>
     <price>48</price>
     <index>59</index>
     <initial>0</initial>
@@ -605,7 +605,7 @@
     <ID>61</ID>
     <name>巫师帽</name>
     <rank>2</rank>
-    <description>暴击时有10%的概率生成1枚金币</description>
+    <description>暴击时有&lt;color="#44BF19"&gt;10%&lt;/color&gt;的概率生成1枚&lt;color="#FBE031"&gt;金币&lt;/color&gt;</description>
     <price>55</price>
     <index>60</index>
     <initial>1</initial>
@@ -615,7 +615,7 @@
     <ID>62</ID>
     <name>知识药剂</name>
     <rank>2</rank>
-    <description>拾取血瓶时，获得500经验值</description>
+    <description>拾取&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;时，获得&lt;color="#44BF19"&gt;500&lt;/color&gt;经验值</description>
     <price>50</price>
     <index>61</index>
     <initial>0</initial>
@@ -625,7 +625,7 @@
     <ID>63</ID>
     <name>猩红收割者</name>
     <rank>2</rank>
-    <description>怪物掉落血瓶的概率提高100%</description>
+    <description>怪物掉落&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;的概率提高&lt;color="#44BF19"&gt;100%&lt;/color&gt;</description>
     <price>54</price>
     <index>62</index>
     <initial>1</initial>
@@ -635,7 +635,7 @@
     <ID>64</ID>
     <name>金盏花</name>
     <rank>2</rank>
-    <description>每拥有5金币，在战斗开始时在附近生成1金币（最多生成50个）</description>
+    <description>每拥有5金币，在战斗开始时在附近生成&lt;color="#44BF19"&gt;1&lt;/color&gt;&lt;color="#FBE031"&gt;金币&lt;/color&gt;（最多生成50个）</description>
     <price>62</price>
     <index>63</index>
     <initial>0</initial>
@@ -645,7 +645,7 @@
     <ID>65</ID>
     <name>采蘑菇的兔兔</name>
     <rank>2</rank>
-    <description>对蘑菇怪人造成的伤害增加100%</description>
+    <description>对&lt;color="#FBE031"&gt;蘑菇怪人&lt;/color&gt;造成的伤害增加&lt;color="#44BF19"&gt;100%&lt;/color&gt;</description>
     <price>52</price>
     <index>64</index>
     <initial>0</initial>
@@ -655,7 +655,7 @@
     <ID>66</ID>
     <name>蘑菇诱饵</name>
     <rank>2</rank>
-    <description>战斗开始时，在随机位置召唤一个蘑菇怪人。</description>
+    <description>战斗开始时，在随机位置召唤一个&lt;color="#FBE031"&gt;蘑菇怪人&lt;/color&gt;</description>
     <price>46</price>
     <index>65</index>
     <initial>1</initial>
@@ -665,7 +665,7 @@
     <ID>67</ID>
     <name>复仇护手</name>
     <rank>2</rank>
-    <description>每次受到攻击后，5s内增加2%的暴击率，最多增加20%，且不会超过暴击率上限</description>
+    <description>每次受到攻击后，5s内增加&lt;color="#44BF19"&gt;2%&lt;/color&gt;的暴击率，最多增加&lt;color="#44BF19"&gt;20%&lt;/color&gt;，但不会超过暴击率上限</description>
     <price>51</price>
     <index>66</index>
     <initial>0</initial>
@@ -675,7 +675,7 @@
     <ID>68</ID>
     <name>橡木棺椁</name>
     <rank>2</rank>
-    <description>所有敌人减缓1%的移动速度</description>
+    <description>所有敌人减缓&lt;color="#44BF19"&gt;1%&lt;/color&gt;的移动速度</description>
     <price>45</price>
     <index>67</index>
     <initial>0</initial>
@@ -685,7 +685,7 @@
     <ID>69</ID>
     <name>嗜血剑</name>
     <rank>2</rank>
-    <description>每次击败一个敌人时，恢复5点生命值</description>
+    <description>每次击败敌人时，恢复&lt;color="#44BF19"&gt;5&lt;/color&gt;点生命值</description>
     <price>48</price>
     <index>68</index>
     <initial>1</initial>
@@ -695,7 +695,7 @@
     <ID>70</ID>
     <name>生命的旅程</name>
     <rank>2</rank>
-    <description>每移动100距离，恢复2%的血量</description>
+    <description>每移动&lt;color="#44BF19"&gt;100&lt;/color&gt;距离，恢复最大生命&lt;color="#44BF19"&gt;2%&lt;/color&gt;的血量</description>
     <price>46</price>
     <index>69</index>
     <initial>0</initial>
@@ -705,7 +705,7 @@
     <ID>71</ID>
     <name>普通会员</name>
     <rank>1</rank>
-    <description>商店武器售价降低5%</description>
+    <description>商店武器售价降低&lt;color="#44BF19"&gt;5%&lt;/color&gt;</description>
     <price>29</price>
     <index>70</index>
     <initial>0</initial>
@@ -715,7 +715,7 @@
     <ID>72</ID>
     <name>高级会员</name>
     <rank>2</rank>
-    <description>商店武器的售价和道具的售价降低5%</description>
+    <description>商店武器的售价和道具的售价降低&lt;color="#44BF19"&gt;5%&lt;/color&gt;</description>
     <price>69</price>
     <index>71</index>
     <initial>0</initial>
@@ -725,7 +725,7 @@
     <ID>73</ID>
     <name>VIP会员</name>
     <rank>3</rank>
-    <description>商店武器的售价减少5%，道具的售价降低10%，每次刷新需要的金币减少10%</description>
+    <description>商店武器的售价减少&lt;color="#44BF19"&gt;5%&lt;/color&gt;，道具的售价降低&lt;color="#44BF19"&gt;10%&lt;/color&gt;，每次刷新需要的金币减少&lt;color="#44BF19"&gt;10%&lt;/color&gt;</description>
     <price>149</price>
     <index>72</index>
     <initial>0</initial>
@@ -735,7 +735,7 @@
     <ID>74</ID>
     <name>一杯啤酒</name>
     <rank>2</rank>
-    <description>闪避率上限+5%，闪避率+2%</description>
+    <description>闪避率上限&lt;color="#44BF19"&gt;+5%&lt;/color&gt;，闪避率&lt;color="#44BF19"&gt;+2%&lt;/color&gt;</description>
     <price>50</price>
     <index>73</index>
     <initial>0</initial>
@@ -745,7 +745,7 @@
     <ID>75</ID>
     <name>普通南瓜</name>
     <rank>2</rank>
-    <description>暴击率上限+5%，暴击率+2%</description>
+    <description>暴击率上限&lt;color="#44BF19"&gt;+5%&lt;/color&gt;，暴击率&lt;color="#44BF19"&gt;+2%&lt;/color&gt;</description>
     <price>50</price>
     <index>74</index>
     <initial>0</initial>
@@ -755,7 +755,7 @@
     <ID>76</ID>
     <name>坩埚</name>
     <rank>2</rank>
-    <description>出售武器后，可以获得一次免费的刷新次数（次数不会保留）</description>
+    <description>出售武器后，可以获得一次&lt;color="#44BF19"&gt;免费&lt;/color&gt;的刷新次数（次数不会保留）</description>
     <price>52</price>
     <index>75</index>
     <initial>0</initial>
@@ -765,7 +765,7 @@
     <ID>77</ID>
     <name>女巫坩埚</name>
     <rank>2</rank>
-    <description>进阶武器后，智力+1，力量+1</description>
+    <description>进阶武器后，智力&lt;color="#44BF19"&gt;+1&lt;/color&gt;，力量&lt;color="#44BF19"&gt;+1&lt;/color&gt;</description>
     <price>58</price>
     <index>76</index>
     <initial>0</initial>
@@ -775,7 +775,7 @@
     <ID>78</ID>
     <name>半满坩埚</name>
     <rank>2</rank>
-    <description>进阶武器后，获得200经验值</description>
+    <description>进阶武器后，获得&lt;color="#44BF19"&gt;200&lt;/color&gt;经验值</description>
     <price>49</price>
     <index>77</index>
     <initial>0</initial>
@@ -785,7 +785,7 @@
     <ID>79</ID>
     <name>满满的坩埚</name>
     <rank>2</rank>
-    <description>出售武器或道具后，防御+1</description>
+    <description>出售武器或道具后，防御&lt;color="#44BF19"&gt;+1&lt;/color&gt;</description>
     <price>53</price>
     <index>78</index>
     <initial>0</initial>
@@ -795,7 +795,7 @@
     <ID>80</ID>
     <name>惬意烟斗</name>
     <rank>2</rank>
-    <description>每刷新5次商店，最大生命增加2</description>
+    <description>每刷新5次商店，最大生命增加&lt;color="#44BF19"&gt;2&lt;/color&gt;</description>
     <price>47</price>
     <index>79</index>
     <initial>0</initial>
@@ -805,7 +805,7 @@
     <ID>81</ID>
     <name>金苹果</name>
     <rank>3</rank>
-    <description>每拥有20金币，造成的伤害增加2.5%</description>
+    <description>每拥有20金币，造成的伤害增加&lt;color="#44BF19"&gt;2.5%&lt;/color&gt;</description>
     <price>139</price>
     <index>80</index>
     <initial>0</initial>
@@ -815,7 +815,7 @@
     <ID>82</ID>
     <name>幸运护符</name>
     <rank>3</rank>
-    <description>每拥有20点幸运，战斗时的暴击率增加1%，闪避率增加1%，最多增加10%，且不会超过暴击率和闪避率上限</description>
+    <description>每拥有20点幸运，战斗时的暴击率增加&lt;color="#44BF19"&gt;1%&lt;/color&gt;，闪避率增加&lt;color="#44BF19"&gt;1%&lt;/color&gt;，最多增加10%，且不会超过暴击率和闪避率上限</description>
     <price>144</price>
     <index>81</index>
     <initial>0</initial>
@@ -825,7 +825,7 @@
     <ID>83</ID>
     <name>时间加速器</name>
     <rank>3</rank>
-    <description>战斗每过5秒，战斗时的攻击速度增加5</description>
+    <description>战斗每过5秒，战斗时的攻击速度增加&lt;color="#44BF19"&gt;5&lt;/color&gt;</description>
     <price>137</price>
     <index>82</index>
     <initial>0</initial>
@@ -835,7 +835,7 @@
     <ID>84</ID>
     <name>破釜沉舟</name>
     <rank>3</rank>
-    <description>当生命值低于50%时，战斗时暴击伤害增加50%</description>
+    <description>当生命值低于50%时，战斗时暴击伤害增加&lt;color="#44BF19"&gt;50%&lt;/color&gt;</description>
     <price>131</price>
     <index>83</index>
     <initial>0</initial>
@@ -845,7 +845,7 @@
     <ID>85</ID>
     <name>钢铁之心</name>
     <rank>3</rank>
-    <description>每次受到伤害，战斗时的防御力增加1，最多增加30</description>
+    <description>每次受到伤害，战斗时的防御力增加&lt;color="#44BF19"&gt;1&lt;/color&gt;，最多增加30</description>
     <price>132</price>
     <index>84</index>
     <initial>0</initial>
@@ -855,7 +855,7 @@
     <ID>86</ID>
     <name>反击之盾</name>
     <rank>3</rank>
-    <description>每次受到伤害，有50%的概率让攻击者受到50%反弹的伤害</description>
+    <description>每次受到伤害，有&lt;color="#44BF19"&gt;50%&lt;/color&gt;的概率让攻击者受到&lt;color="#44BF19"&gt;50%&lt;/color&gt;反弹的固定伤害</description>
     <price>133</price>
     <index>85</index>
     <initial>0</initial>
@@ -865,7 +865,7 @@
     <ID>87</ID>
     <name>力量代价</name>
     <rank>3</rank>
-    <description>造成的伤害增加100%，但是受到的伤害也增加50%</description>
+    <description>造成的伤害增加&lt;color="#44BF19"&gt;100%&lt;/color&gt;，但是受到的伤害也增加&lt;color="#FF5F5F"&gt;50%&lt;/color&gt;</description>
     <price>126</price>
     <index>86</index>
     <initial>0</initial>
@@ -875,7 +875,7 @@
     <ID>88</ID>
     <name>黄金奇异果</name>
     <rank>3</rank>
-    <description>拾取金币时，有20%的概率恢复（10+10%收入）的生命值</description>
+    <description>拾取金币时，有&lt;color="#44BF19"&gt;20%&lt;/color&gt;的概率恢复&lt;color="#44BF19"&gt;10+10%收入&lt;/color&gt;的生命值</description>
     <price>130</price>
     <index>87</index>
     <initial>0</initial>
@@ -885,7 +885,7 @@
     <ID>89</ID>
     <name>愈术符咒</name>
     <rank>3</rank>
-    <description>释放主动技能后，恢复（英雄等级/2）%最大生命的生命值</description>
+    <description>释放&lt;color="#FBE031"&gt;主动技能&lt;/color&gt;后，恢复&lt;color="#44BF19"&gt;(英雄等级/2)%&lt;/color&gt;最大生命的生命值</description>
     <price>130</price>
     <index>88</index>
     <initial>0</initial>
@@ -895,7 +895,7 @@
     <ID>90</ID>
     <name>暴击领悟</name>
     <rank>3</rank>
-    <description>每拥有1%的暴击率，击败怪物获得的经验增加1%</description>
+    <description>每拥有&lt;color="#44BF19"&gt;1%&lt;/color&gt;的暴击率，击败怪物获得的经验增加&lt;color="#44BF19"&gt;1%&lt;/color&gt;</description>
     <price>140</price>
     <index>89</index>
     <initial>0</initial>
@@ -905,7 +905,7 @@
     <ID>91</ID>
     <name>闪击披风</name>
     <rank>3</rank>
-    <description>每次闪避成功后，下一次攻击造成双倍伤害。</description>
+    <description>每次闪避后，下一次攻击造成&lt;color="#44BF19"&gt;双倍&lt;/color&gt;伤害</description>
     <price>148</price>
     <index>90</index>
     <initial>0</initial>
@@ -915,7 +915,7 @@
     <ID>92</ID>
     <name>一杯神秘啤酒</name>
     <rank>3</rank>
-    <description>闪避率上限+10%，闪避率+5%</description>
+    <description>闪避率上限&lt;color="#44BF19"&gt;+10%&lt;/color&gt; 闪避率&lt;color="#44BF19"&gt;+5%&lt;/color&gt;</description>
     <price>135</price>
     <index>91</index>
     <initial>0</initial>
@@ -925,7 +925,7 @@
     <ID>93</ID>
     <name>邪恶南瓜</name>
     <rank>3</rank>
-    <description>暴击率上限+10%，暴击率+5%</description>
+    <description>暴击率上限&lt;color="#44BF19"&gt;+10%&lt;/color&gt; 暴击率&lt;color="#44BF19"&gt;+5%&lt;/color&gt;</description>
     <price>135</price>
     <index>92</index>
     <initial>0</initial>
@@ -935,7 +935,7 @@
     <ID>94</ID>
     <name>商贾之印</name>
     <rank>2</rank>
-    <description>每次商店的第一次刷新免费</description>
+    <description>每次商店的&lt;color="#44BF19"&gt;第一次&lt;/color&gt;刷新&lt;color="#44BF19"&gt;免费&lt;/color&gt;</description>
     <price>55</price>
     <index>93</index>
     <initial>0</initial>
@@ -945,7 +945,7 @@
     <ID>95</ID>
     <name>投资回报</name>
     <rank>3</rank>
-    <description>每消耗100金币，收入增加2</description>
+    <description>每消耗100金币，收入增加&lt;color="#44BF19"&gt;2&lt;/color&gt;</description>
     <price>141</price>
     <index>94</index>
     <initial>0</initial>
@@ -955,7 +955,7 @@
     <ID>96</ID>
     <name>生命之金</name>
     <rank>3</rank>
-    <description>将所有的金币1：2转换为最大生命。</description>
+    <description>将所有的金币&lt;color="#44BF19"&gt;1:2&lt;/color&gt;转换为最大生命。(无尽模式改为&lt;color="#44BF19"&gt;1:0.1&lt;/color&gt;)</description>
     <price>100</price>
     <index>95</index>
     <initial>0</initial>
@@ -965,7 +965,7 @@
     <ID>97</ID>
     <name>魔术牌</name>
     <rank>3</rank>
-    <description>每次刷新商店，有5%的概率本次所有道具或武器免费购买。</description>
+    <description>每次刷新商店，有&lt;color="#44BF19"&gt;5%&lt;/color&gt;的概率本次所有道具或武器&lt;color="#44BF19"&gt;免费&lt;/color&gt;购买。</description>
     <price>148</price>
     <index>96</index>
     <initial>0</initial>
