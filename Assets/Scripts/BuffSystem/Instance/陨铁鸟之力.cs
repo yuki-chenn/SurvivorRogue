@@ -27,6 +27,7 @@ public class ÔÉÌúÄñÖ®Á¦ : BaseBuff
     {
         base.OnWaveEnd();
         needRemove = true;
+        deltaValue = 0;
     }
 
 }

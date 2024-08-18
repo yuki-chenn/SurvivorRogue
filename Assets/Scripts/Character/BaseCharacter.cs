@@ -43,15 +43,16 @@ public class BaseCharacter : MonoBehaviour
 
     private void Awake()
     {
+        InitAnimation();
+        UItrans = transform.Find("UI");
+        rigidBody = gameObject.GetComponent<Rigidbody2D>();
+        bloodBar = transform.Find("UI").GetComponentInChildren<Slider>();
     }
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        InitAnimation();
-        UItrans = transform.Find("UI");
-        rigidBody = gameObject.GetComponent<Rigidbody2D>();
-        bloodBar = transform.Find("UI").GetComponentInChildren<Slider>();
+        
     }
 
     protected virtual void Update()
