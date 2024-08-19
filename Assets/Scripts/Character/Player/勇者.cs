@@ -50,10 +50,10 @@ public class 勇者 : Player
         base.OnHPChanged(oldHp,newHp);
         // 被动 
         // 当血量小于等于20%时，造成的所有伤害增加50%，之后每减少5%，造成的所有伤害增加50%
-
+        if (newHp <= 0) return;
         var curBuff = buffList.GetBuffById(背水一战_buff_ID);
         int curStack = curBuff == null ? 0 : curBuff.curStack;
-        float curPercent = curHp / maxHp;
+        float curPercent = newHp / maxHp;
         int newStack = 0;
         if (curPercent <= 0.2f)
         {
