@@ -8,13 +8,22 @@ public class 陨铁鸟之力 : BaseBuff
 
     private float deltaValue = 0;
 
+    public override void AddModify()
+    {
+        clkDuration = Info.Duration;
+    }
+
     public override void OnAdd()
     {
         base.OnAdd();
-        float val = GameManager.Instance.Player.attr.移动速度 * 0.1f * curStack;
-        deltaValue = -GameManager.Instance.Player.attr.移动速度;
-        GameManager.Instance.Player.attr.移动速度 += val;
-        deltaValue += GameManager.Instance.Player.attr.移动速度;
+        if(deltaValue == 0)
+        {
+            float val = GameManager.Instance.Player.attr.移动速度 * 0.1f * curStack;
+            deltaValue = -GameManager.Instance.Player.attr.移动速度;
+            GameManager.Instance.Player.attr.移动速度 += val;
+            deltaValue += GameManager.Instance.Player.attr.移动速度;
+        }
+        
     }
 
     public override void OnRemove()
