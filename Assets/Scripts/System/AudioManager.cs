@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class AudioManager : PersistentSingleton<AudioManager>
 {
-    public float effectScale = 0.6f;
+    public float effectScale = 1.0f;
+    public float bgmScale = 1.0f;
 
-    private AudioSource audioSource;
+    private AudioSource bgmAudioSource;
+    private AudioSource effectAudioSource;
 
     public AudioClip 主界面bgm;
     public AudioClip 商店界面bgm;
@@ -22,8 +24,21 @@ public class AudioManager : PersistentSingleton<AudioManager>
     protected override void Awake()
     {
         base.Awake();
-        audioSource = GetComponent<AudioSource>();
-        audioSource.loop = true; // 设置背景音乐音频源循环播放
+        var ass = GetComponents<AudioSource>();
+        bgmAudioSource = ass[0];
+        effectAudioSource = ass[1];
+        bgmAudioSource.loop = true; // 设置背景音乐音频源循环播放
+    }
+
+    public void SetBgmScale(float scale)
+    {
+        bgmScale = scale;
+        bgmAudioSource.volume = scale;
+    }
+
+    public void SetEffectScale(float scale)
+    {
+        effectScale = scale;
     }
 
     // 播放主界面BGM
@@ -81,17 +96,22 @@ public class AudioManager : PersistentSingleton<AudioManager>
     // 通用播放BGM方法
     private void PlayBgmAudio(AudioClip clip)
     {
-        if (audioSource.clip == clip)
+        if (bgmAudioSource.clip == clip)
         {
             return; // 如果当前播放的音频已经是目标音频，不重复播放
         }
 
-        audioSource.clip = clip;
-        audioSource.Play();
+        bgmAudioSource.clip = clip;
+        bgmAudioSource.Play();
     }
 
     private void PlayEffectAudio(AudioClip clip)
     {
-        audioSource.PlayOneShot(clip, effectScale);
+        effectAudioSource.PlayOneShot(clip, effectScale);
+    }
+
+    public void PlayEnemyAudio(AudioClip clip)
+    {
+        effectAudioSource.PlayOneShot(clip, effectScale);
     }
 }

@@ -44024,6 +44024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87a27340127dce44addfc0c512a0dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieAudioClip: {fileID: 8300000, guid: 3b605f3e446a434479c76412304bcb37, type: 3}
   maxHp: 150
   _hp: 0
   isDead: 0
@@ -44043,7 +44044,7 @@ MonoBehaviour:
   "\u6280\u80FD\u51B7\u5374\u65F6\u95F4": 7
   skillEffect: {fileID: 1053124726552870723}
   passiveEffect: {fileID: 2319129896068008857}
-  "\u65CB\u98CE\u65A9\u51FBeffect": {fileID: 8300000, guid: 16f7755440c72804d9e6e5bc5bfe4add, type: 3}
+  "\u65CB\u98CE\u65A9\u51FBaudio": {fileID: 8300000, guid: 16f7755440c72804d9e6e5bc5bfe4add, type: 3}
 --- !u!82 &4850149178649983049
 AudioSource:
   m_ObjectHideFlags: 0

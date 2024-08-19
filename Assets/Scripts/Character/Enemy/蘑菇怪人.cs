@@ -20,6 +20,8 @@ public class 蘑菇怪人 : Enemy
 
     public bool bombSelf = false;
 
+    public AudioClip 自身爆炸audio;
+
     protected override void Start()
     {
         base.Start();
@@ -43,6 +45,7 @@ public class 蘑菇怪人 : Enemy
 
     public void 爆炸自身死亡()
     {
+        PlayAudioEffect(自身爆炸audio);
         transform.Find("Core").gameObject.SetActive(false);
         transform.Find("EscapeTrigger").gameObject.SetActive(false);
         UItrans.gameObject.SetActive(false);

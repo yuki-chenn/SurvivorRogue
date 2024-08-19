@@ -20,6 +20,8 @@ public class BaseCharacter : MonoBehaviour
     // ÒôÐ§²¥·Å
     protected AudioSource audioSource;
 
+    public AudioClip dieAudioClip;
+
     public float maxHp;
     public float _hp;
     public float curHp
@@ -122,6 +124,7 @@ public class BaseCharacter : MonoBehaviour
     public virtual void Die(float time)
     {
         if (curHp > 0) return;
+        if (dieAudioClip != null) PlayAudioEffect(dieAudioClip);
         isDead = true;
         animator.SetBool("isDead", true);
         rigidBody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
@@ -145,6 +148,14 @@ public class BaseCharacter : MonoBehaviour
 
     protected void PlayAudioEffect(AudioClip clip)
     {
-        audioSource.PlayOneShot(clip,1.0f);
+        if (audioSource == null)
+        {
+            AudioManager.Instance.PlayEnemyAudio(clip);
+        }
+        else
+        {
+            audioSource.PlayOneShot(clip, 1.0f);
+        }
+        
     }
 }

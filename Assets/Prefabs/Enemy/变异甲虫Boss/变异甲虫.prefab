@@ -4896,6 +4896,7 @@ GameObject:
   - component: {fileID: 771051252218662571}
   - component: {fileID: 771051252218662570}
   - component: {fileID: 771051252218662568}
+  - component: {fileID: -4808527557344530647}
   m_Layer: 0
   m_Name: "\u53D8\u5F02\u7532\u866B"
   m_TagString: Enemy
@@ -5104,6 +5105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f4636f112ff0c4391e247dda521d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieAudioClip: {fileID: 8300000, guid: 6b8b650fd7c50da4c9321a5fcf699baf, type: 3}
   maxHp: 500
   _hp: 500
   isDead: 0
@@ -5126,6 +5128,107 @@ MonoBehaviour:
   "\u53D1\u5C04\u7269\u4F53\u751F\u6210\u70B9": {fileID: 5711874007094147500}
   "\u6CF0\u5C71\u538B\u9876\u65F6\u95F4": 2
   "\u6CF0\u5C71\u538B\u9876\u8DC3\u8D77\u9AD8\u5EA6": 5
+  "\u543C\u53EBaudio": {fileID: 8300000, guid: 8d1926a13cfa5234fbed98e0616d2703, type: 3}
+  "\u6EDA\u52A8audio": {fileID: 8300000, guid: 99041e021b0ee844c8854706be5f9ec4, type: 3}
+  "\u53D1\u5C04\u5C16\u523Aaudio": {fileID: 8300000, guid: 14f24de2a9a70154e96297de25e2184c, type: 3}
+  "\u8D77\u98DEaudio": {fileID: 8300000, guid: aef47c3767d149544a514ab56a554238, type: 3}
+  "\u843D\u5730audio": {fileID: 8300000, guid: 6cd0699aae646f54fa2cab8c6a74c565, type: 3}
+--- !u!82 &-4808527557344530647
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771051252218662583}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1581315972253919269
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,6 +5242,7 @@ GameObject:
   - component: {fileID: 5025970926355771943}
   - component: {fileID: 4529483081634757186}
   - component: {fileID: 4529483081634757197}
+  - component: {fileID: 150742542473312117}
   m_Layer: 9
   m_Name: landEF
   m_TagString: Untagged
@@ -9989,6 +10093,26 @@ MonoBehaviour:
   source: {fileID: 771051252218662583}
   autoDestory: 0
   isFlyingObject: 0
+--- !u!114 &150742542473312117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581315972253919269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b0dc8a4665cc44a84a8ebf62683c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 771051252218662583}
+  autoDestory: 0
+  isFlyingObject: 0
+  collideTag:
+  - Player
+  "\u51FB\u9000\u529B\u5EA6": 6
+  "\u6C34\u5E73\u5782\u76F4\u79FB\u52A8": 0
+  useParentPos: 1
 --- !u!1 &3179028535229066846
 GameObject:
   m_ObjectHideFlags: 0

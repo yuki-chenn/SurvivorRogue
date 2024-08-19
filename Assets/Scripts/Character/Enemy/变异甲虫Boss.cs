@@ -22,6 +22,12 @@ public class 变异甲虫Boss : Enemy
     public float 泰山压顶时间 = 2.0f;
     public float 泰山压顶跃起高度 = 5.0f;
 
+    public AudioClip 吼叫audio;
+    public AudioClip 滚动audio;
+    public AudioClip 发射尖刺audio;
+    public AudioClip 起飞audio;
+    public AudioClip 落地audio;
+
     protected override void Start()
     {
         base.Start();
@@ -101,9 +107,9 @@ public class 变异甲虫Boss : Enemy
                 }
 
                 rollDir = ((Vector2)targetPos - (Vector2)transform.position).normalized;
+                if (cnt > 滚动冲击次数) break;
+                PlayAudioEffect(滚动audio);
             }
-
-            if (cnt > 滚动冲击次数) break;
 
             transform.localScale = GeometryUtil.GetDirectionScale(transform.localScale, rollDir, "x");
             UItrans.localScale = GeometryUtil.GetDirectionScale(UItrans.localScale, rollDir, "x");
@@ -121,6 +127,7 @@ public class 变异甲虫Boss : Enemy
     public void 吼叫()
     {
         animator.SetBool("isRoaring", true);
+        PlayAudioEffect(吼叫audio);
         StartCoroutine(Coroutine吼叫(吼叫时间));
 
     }
@@ -158,6 +165,7 @@ public class 变异甲虫Boss : Enemy
 
         for (int i = 0; i < 尖刺飞弹次数; i++)
         {
+            PlayAudioEffect(发射尖刺audio);
             int offset = RandomUtil.RandomInt(2, 4);
             for (int j = 0; j < 尖刺飞弹个数; j++)
             {
@@ -198,6 +206,8 @@ public class 变异甲虫Boss : Enemy
 
         float elapsed = 0f;
 
+        PlayAudioEffect(起飞audio);
+
         while (elapsed < 泰山压顶时间)
         {
             elapsed += Time.deltaTime;
@@ -221,6 +231,7 @@ public class 变异甲虫Boss : Enemy
         }
 
         // 落地后触发land动画
+        PlayAudioEffect(落地audio);
         animator.SetTrigger("land");
         transform.Find("landEF").gameObject.SetActive(true);
     }

@@ -20,6 +20,8 @@
     HideDataFilePanel,
     ShowPausePanel,
     HidePausePanel,
+    ShowSettingPanel,
+    HideSettingPanel,
 
     // 更新初始选择的武器
     RefreshSelectWeapon,

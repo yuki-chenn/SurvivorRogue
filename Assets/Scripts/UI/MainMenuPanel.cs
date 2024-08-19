@@ -8,10 +8,13 @@ public class MainMenuPanel : MonoBehaviour
 {
     private RectTransform titleRecT;
     private RectTransform buttonsRecT;
+    private RectTransform btnSettingRecT;
 
     private Button btnNewGame;
     private Button btnLoadGame;
     private Button btnExitGame;
+
+    private Button btnSetting;
 
     private void Awake()
     {
@@ -29,6 +32,7 @@ public class MainMenuPanel : MonoBehaviour
     {
         titleRecT = transform.Find("Title") as RectTransform;
         buttonsRecT = transform.Find("Buttons") as RectTransform;
+        btnSettingRecT = transform.Find("SettingBtn") as RectTransform;
 
         Transform buttons = transform.Find("Buttons");
         btnNewGame = buttons.Find("NewGameBtn").GetComponent<Button>();
@@ -45,6 +49,13 @@ public class MainMenuPanel : MonoBehaviour
             AudioManager.Instance.PlayButtonCliclkEffect();
             Hide();
             EventCenter.Broadcast<int>(EventDefine.ShowDataFilePanel, 1);
+        });
+
+        btnSetting = transform.Find("SettingBtn").GetComponent<Button>();
+        btnSetting.onClick.AddListener(() =>
+        {
+            AudioManager.Instance.PlayButtonCliclkEffect();
+            EventCenter.Broadcast(EventDefine.ShowSettingPanel);
         });
 
         btnExitGame = buttons.Find("ExitGameBtn").GetComponent<Button>();
@@ -64,6 +75,7 @@ public class MainMenuPanel : MonoBehaviour
     private void Hide()
     {
         titleRecT.DOAnchorPos(new Vector2(0, 380), 0.5f);
+        btnSettingRecT.DOAnchorPos(new Vector2(-90, 90), 0.5f);
         buttonsRecT.DOAnchorPos(new Vector2(0, -80), 0.5f).OnComplete(() => { gameObject.SetActive(false); });
     }
 
@@ -72,6 +84,7 @@ public class MainMenuPanel : MonoBehaviour
         gameObject.SetActive(true);
         titleRecT.DOAnchorPos(new Vector2(0,-370), 0.5f);
         buttonsRecT.DOAnchorPos(new Vector2(0, 222), 0.5f);
+        btnSettingRecT.DOAnchorPos(new Vector2(-90, -90), 0.5f);
     }
 
 }

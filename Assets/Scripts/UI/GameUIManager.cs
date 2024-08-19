@@ -27,9 +27,14 @@ public class GameUIManager : Singleton<GameUIManager>
     private Image imgAvatar;
     private Button btnInfo;
 
+    private GameObject loadingPanel;
+
     protected override void Awake()
     {
         base.Awake();
+        loadingPanel = transform.Find("LoadingPanel").gameObject;
+        loadingPanel.SetActive(false);
+
         InitSkillUI();
         InitExpLevelUI();
 
@@ -150,4 +155,16 @@ public class GameUIManager : Singleton<GameUIManager>
         txtExp.text = string.Format("{0}/{1}", curExp.ToString(), nextExp.ToString());
         sliderExp.value = 1.0f * curExp / nextExp;
     }
+
+
+    public void ShowLoadingPanel()
+    {
+        loadingPanel.SetActive(true);
+    }
+
+    public void CloseLoadingPanel()
+    {
+        loadingPanel.SetActive(false);
+    }
+
 }

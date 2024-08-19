@@ -9,6 +9,7 @@ public class FightState : FSMState
 
     private float overClk;
 
+    bool dieFlag = false;
 
     public FightState()
     {
@@ -24,6 +25,8 @@ public class FightState : FSMState
     public override void DoBeforeEntering()
     {
         base.DoBeforeEntering();
+        dieFlag = false;
+
         AudioManager.Instance.PlayGameBGM();
 
         overClk = gameData.waveTime;
@@ -88,8 +91,11 @@ public class FightState : FSMState
         // 游戏结束
         if (GameManager.Instance.playerGo.GetComponent<Player>().curHp <= 0)
         {
+            if (dieFlag) return;
+            dieFlag = true;
             Debug.Log("Die");
-            GameManager.Instance.fsm.PerformTransition(Transition.PlayerDie);
+            GameManager.Instance.PlayerDie();
+            return;
         }
 
         // 本轮波次结束

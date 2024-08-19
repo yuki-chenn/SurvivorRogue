@@ -554,6 +554,19 @@ public class GameManager : PersistentSingleton<GameManager>
         playerGo.SetActive(false);
     }
 
+    public void PlayerDie()
+    {
+        GameUIManager.Instance.ShowLoadingPanel();
+        StartCoroutine(DieTransition());
+    }
+
+    IEnumerator DieTransition()
+    {
+        yield return new WaitForSeconds(3);
+        GameUIManager.Instance.CloseLoadingPanel();
+        fsm.PerformTransition(Transition.PlayerDie);
+    }
+
     public void GenerateWeapons()
     {
         var par = playerGo.transform.Find("Weapons");

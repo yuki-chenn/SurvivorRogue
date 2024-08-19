@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 407a3fd2b857abd4bb76a794e67a5e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieAudioClip: {fileID: 8300000, guid: 1e3a5c3b1f8b02440893495768e0a628, type: 3}
   maxHp: 100
   _hp: 100
   isDead: 0
@@ -318,6 +319,7 @@ MonoBehaviour:
   "\u53D1\u5C04\u7269\u4F53": {fileID: 458837089556464622, guid: 853e025c882541644b4e019de5a1d4e4, type: 3}
   "\u53D1\u5C04\u7269\u4F53\u751F\u6210\u70B9": {fileID: 6124956614703157883}
   "\u653B\u51FB\u7279\u6548": {fileID: 377512634603755410}
+  "\u53D1\u5C04\u5B50\u5F39audio": {fileID: 8300000, guid: fbca627e0a888114b87cee8f6c6ec667, type: 3}
 --- !u!1 &6124956613084089843
 GameObject:
   m_ObjectHideFlags: 0

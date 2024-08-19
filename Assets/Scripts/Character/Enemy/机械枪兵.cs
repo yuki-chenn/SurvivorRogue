@@ -10,6 +10,7 @@ public class 机械枪兵 : Enemy
     public Transform 发射物体生成点;
     public GameObject 攻击特效;
 
+    public AudioClip 发射子弹audio;
 
     protected override void Update()
     {
@@ -49,6 +50,7 @@ public class 机械枪兵 : Enemy
 
                 for(int i = 0; i < 10; ++i)
                 {
+                    PlayAudioEffect(发射子弹audio);
                     Vector2 direction = ((Vector2)targetPos - (Vector2)发射物体生成点.position).normalized;
                     var bullet = Instantiate(发射物体, 发射物体生成点.position, Quaternion.identity, ContainerManager.Instance.enemyContainer);
                     bullet.GetComponent<飞行物伤害>().source = gameObject;
@@ -71,6 +73,7 @@ public class 机械枪兵 : Enemy
 
                 for (int i = 0; i < 5; ++i)
                 {
+                    PlayAudioEffect(发射子弹audio);
                     var midBullet = Instantiate(发射物体, 发射物体生成点.position, Quaternion.identity, ContainerManager.Instance.enemyContainer);
                     midBullet.GetComponent<飞行物伤害>().source = gameObject;
                     midBullet.transform.localScale = GeometryUtil.GetDirectionScale(midBullet.transform.localScale, midDirection, "x");
@@ -102,6 +105,7 @@ public class 机械枪兵 : Enemy
 
                 for (int i = 0; i < 30; ++i)
                 {
+                    PlayAudioEffect(发射子弹audio);
                     float angle = Mathf.Sin(Time.time * 5) * 30; // 生成波浪效果的角度
                     Vector2 direction2 = ((Vector2)targetPos2 - (Vector2)发射物体生成点.position).normalized;
                     Vector2 waveDirection = Quaternion.Euler(0, 0, angle) * direction2;

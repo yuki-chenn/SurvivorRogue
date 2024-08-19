@@ -434,6 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d6421f05533ca4fb67260967267739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieAudioClip: {fileID: 8300000, guid: c9bb85ac7d691414cae47dae308d8563, type: 3}
   maxHp: 50
   _hp: 50
   isDead: 0
