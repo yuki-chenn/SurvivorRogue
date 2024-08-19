@@ -27,6 +27,7 @@ public class PausePanel : MonoBehaviour
         btnBackGame = transform.Find("BackBtn").GetComponent<Button>();
         btnBackGame.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             Hide();
         });
         btnBackGame.interactable = false;

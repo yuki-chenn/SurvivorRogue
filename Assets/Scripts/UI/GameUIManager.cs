@@ -64,6 +64,7 @@ public class GameUIManager : Singleton<GameUIManager>
         btnInfo = ExpLevel.Find("Avatar").GetComponent<Button>();
         btnInfo.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             btnInfo.interactable = false;
             //GameManager.Instance.fsm.PerformTransition(Transition.Pause);
             EventCenter.Broadcast(EventDefine.ShowPausePanel);
@@ -112,6 +113,36 @@ public class GameUIManager : Singleton<GameUIManager>
     {
         txtMoney.text = money.ToString();
     }
+
+    private bool isEffectPlaying = false;
+
+    public void LackOfMoney()
+    {
+        AudioManager.Instance.PlayErrorEffect();
+        if (!isEffectPlaying)
+        {
+            isEffectPlaying = true;
+            StartCoroutine(FlashMoneyText());
+        }
+    }
+
+    private IEnumerator FlashMoneyText()
+    {
+        // 假设 txtMoney 是你的文本对象
+        Color originalColor = txtMoney.color;
+        Color flashColor = Color.red;
+
+        for (int i = 0; i < 3; i++)
+        {
+            txtMoney.color = flashColor;
+            yield return new WaitForSeconds(0.2f);  // 设置闪烁的时间间隔
+            txtMoney.color = originalColor;
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        isEffectPlaying = false;  // 效果结束，允许再次触发
+    }
+
 
     public void UpdateLevelExp(int level,int curExp,int nextExp)
     {

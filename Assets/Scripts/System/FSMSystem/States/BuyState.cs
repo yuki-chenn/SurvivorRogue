@@ -12,6 +12,7 @@ public class BuyState : FSMState
     public override void DoBeforeEntering()
     {
         base.DoBeforeEntering();
+        AudioManager.Instance.PlayShopBGM();
 
         // 展示开宝箱界面
         if (GameManager.Instance.gameData.chestCount[0] + 

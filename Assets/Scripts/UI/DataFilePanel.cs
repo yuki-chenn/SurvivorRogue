@@ -37,7 +37,8 @@ public class DataFilePanel : MonoBehaviour
         btnBack = transform.Find("BackBtn").GetComponent<Button>();
         btnBack.onClick.AddListener(() =>
         {
-            if(isLoad) EventCenter.Broadcast(EventDefine.ShowMainMenuPanel);
+            AudioManager.Instance.PlayButtonCliclkEffect();
+            if (isLoad) EventCenter.Broadcast(EventDefine.ShowMainMenuPanel);
             else EventCenter.Broadcast(EventDefine.ShowSelectPanel);
             Hide();
         });
@@ -63,6 +64,7 @@ public class DataFilePanel : MonoBehaviour
             
             file.GetComponent<Button>().onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlayButtonCliclkEffect();
                 Debug.Log(string.Format("{0}¡À¥Êµµ{1}", isLoad ? "∂¡»°" : "±£¥Ê", index));
                 SaveOrLoadData(index);
                 RefreshScroll();

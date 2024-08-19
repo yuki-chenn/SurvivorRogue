@@ -24,6 +24,8 @@ public class FightState : FSMState
     public override void DoBeforeEntering()
     {
         base.DoBeforeEntering();
+        AudioManager.Instance.PlayGameBGM();
+
         overClk = gameData.waveTime;
         gameData.curWave++;
         // 更新敌人生成

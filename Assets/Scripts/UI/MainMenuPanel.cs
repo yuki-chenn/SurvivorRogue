@@ -34,7 +34,7 @@ public class MainMenuPanel : MonoBehaviour
         btnNewGame = buttons.Find("NewGameBtn").GetComponent<Button>();
         btnNewGame.onClick.AddListener(() =>
         {
-            //SceneManager.LoadScene(1);
+            AudioManager.Instance.PlayButtonCliclkEffect();
             Hide();
             EventCenter.Broadcast(EventDefine.ShowSelectPanel);
         });
@@ -42,6 +42,7 @@ public class MainMenuPanel : MonoBehaviour
         btnLoadGame = buttons.Find("LoadGameBtn").GetComponent<Button>();
         btnLoadGame.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             Hide();
             EventCenter.Broadcast<int>(EventDefine.ShowDataFilePanel, 1);
         });
@@ -49,6 +50,7 @@ public class MainMenuPanel : MonoBehaviour
         btnExitGame = buttons.Find("ExitGameBtn").GetComponent<Button>();
         btnExitGame.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
 #if UNITY_EDITOR  
             UnityEditor.EditorApplication.isPlaying = false;
 #else

@@ -12,6 +12,7 @@
     {
         base.DoBeforeEntering();
         GameManager.Instance.ClearData();
+        AudioManager.Instance.PlayMainMenuBGM();
     }
 
     public override void DoBeforeLeaving()

@@ -60,6 +60,7 @@ public class WeaponPopUpPanel : MonoBehaviour
         btnRankup = buttons.Find("RankupBtn").GetComponent<Button>();
         btnRankup.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayLevelUpWeaponEffect();
             if (!GameManager.Instance.CanRankUp(weaponIndex)) return;
             // 升级
             //Debug.Log("升级");
@@ -71,6 +72,7 @@ public class WeaponPopUpPanel : MonoBehaviour
         btnSale = buttons.Find("SaleBtn").GetComponent<Button>();
         btnSale.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayBuySelectionsEffect();
             // 出售
             //Debug.Log("出售");
             GameManager.Instance.SaleWeapon(weaponIndex);

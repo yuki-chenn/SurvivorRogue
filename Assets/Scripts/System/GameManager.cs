@@ -126,6 +126,7 @@ public class GameManager : PersistentSingleton<GameManager>
 
     public void LevelUp()
     {
+        AudioManager.Instance.PlayLevelUpEffect();
         gameData.level += 1;
         gameData.nextLevelExp = (int)(1000 * Mathf.Exp(0.2f * (gameData.level - 1)));
         // 属性增加
@@ -281,7 +282,7 @@ public class GameManager : PersistentSingleton<GameManager>
         // 满了
         int emptyIndex = CanBuyWeapon();
         if (emptyIndex == -1) return;
-
+        AudioManager.Instance.PlayBuySelectionsEffect();
         gameData.money -= price;
 
         Debug.Log("buy weapon : " + info.Name);
@@ -298,7 +299,7 @@ public class GameManager : PersistentSingleton<GameManager>
         // 两把武器不一样
         if (gameData.weaponIDs[rankupIndex] != info.ID) return;
         gameData.money -= price;
-
+        AudioManager.Instance.PlayLevelUpWeaponEffect();
         Debug.Log("buy weapon and rank up : " + info.Name);
         gameData.weaponIDs[rankupIndex] = info.RankupWeaponID;
         #region 77-女巫坩埚 78-半满坩埚
@@ -332,6 +333,7 @@ public class GameManager : PersistentSingleton<GameManager>
             Debug.LogError("金币不足");
             return;
         }
+        AudioManager.Instance.PlayBuySelectionsEffect();
         gameData.money -= price;
         gameData.itemIDs[info.ID] = gameData.itemIDs.TryGetValue(info.ID, out int count) ? count + 1 : 1;
         var item = ItemFactory.GetItemByID(info.ID);

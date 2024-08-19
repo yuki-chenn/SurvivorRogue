@@ -96,13 +96,14 @@ public class ShopPanel : MonoBehaviour
         btnContinue = transform.Find("ContinueBtn").GetComponent<Button>();
         btnContinue.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             EventCenter.Broadcast(EventDefine.HideShopPanel);
         });
 
         btnRefreshSelections = transform.Find("RefreshBtn").GetComponent<Button>();
         btnRefreshSelections.onClick.AddListener(() =>
         {
-
+            
             if (gameData.isNextFree)
             {
                 gameData.isNextFree = false;
@@ -111,14 +112,15 @@ public class ShopPanel : MonoBehaviour
             {
                 if (gameData.money < refreshCost)
                 {
-                    // TODO:展示钱不够
+                    // 展示钱不够
+                    GameUIManager.Instance.LackOfMoney();
                     return;
                 }
                 gameData.money -= refreshCost;
                 gameData.costX++;
                 refreshCost = (int)(10 * Mathf.Exp(0.15f * gameData.costX));
             }
-
+            AudioManager.Instance.PlayRefreshSelectionsEffect();
             gameData.refreshCount++;
 
 
@@ -157,6 +159,7 @@ public class ShopPanel : MonoBehaviour
         btnBackMenu = transform.Find("BackMenuBtn").GetComponent<Button>();
         btnBackMenu.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             // 存档
             GameManager.Instance.SaveGameData(GameManager.Instance.gameData.saveIndex);
             GameManager.Instance.OverridePlayerPrefs(GameManager.Instance.gameData.saveIndex);
@@ -224,6 +227,7 @@ public class ShopPanel : MonoBehaviour
                 int index = i;
                 btn.onClick.AddListener(() =>
                 {
+                    AudioManager.Instance.PlayButtonCliclkEffect();
                     EventCenter.Broadcast<WeaponTplInfo, Vector2, int>(EventDefine.ShowWeaponPopUpPanel, info, weaponGo.transform.position, index);
                 });
                 weaponGo.transform.Find("WeaponIcon").GetComponent<Image>().sprite = weaponIcon;
@@ -352,6 +356,7 @@ public class ShopPanel : MonoBehaviour
         btnLock.onClick.RemoveAllListeners();
         btnLock.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayLockSelectionsEffect();
             isLock[index] = !isLock[index];
             RefreshLockState(index);
         });
@@ -399,7 +404,8 @@ public class ShopPanel : MonoBehaviour
 
             if (gameData.money < price)
             {
-                // TODO:展示钱不够
+                // 钱不够
+                GameUIManager.Instance.LackOfMoney();
                 return;
             }
             
@@ -422,7 +428,8 @@ public class ShopPanel : MonoBehaviour
 
             if (gameData.money < price)
             {
-                // TODO:展示钱不够
+                // 展示钱不够
+                GameUIManager.Instance.LackOfMoney();
                 return;
             }
             GameManager.Instance.BuyItem(info, ItemDiscount, gameData.isFree[index]);

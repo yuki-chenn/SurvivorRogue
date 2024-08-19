@@ -56,6 +56,7 @@ public class WeaponItemPanel : MonoBehaviour
         backBtn = transform.Find("BgFrame/BackBtn").GetComponent<Button>();
         backBtn.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             if (showType == 0)
             {
                 gameData.initialWeaponId = weaponInfos[curSelectedWeaponIndex].ID;
@@ -119,6 +120,7 @@ public class WeaponItemPanel : MonoBehaviour
             go.GetComponent<Button>().onClick.RemoveAllListeners();
             go.GetComponent<Button>().onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlayButtonCliclkEffect();
                 curSelectedWeaponIndex = index;
                 RefreshScroll();
                 RefreshInfo();

@@ -78,6 +78,7 @@ public class SelectPanel : MonoBehaviour
         btnBack = transform.Find("BackBtn").GetComponent<Button>();
         btnBack.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             Hide();
             EventCenter.Broadcast(EventDefine.ShowMainMenuPanel);
         });
@@ -85,6 +86,8 @@ public class SelectPanel : MonoBehaviour
         btnStart = transform.Find("StartBtn").GetComponent<Button>();
         btnStart.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
+
             if (gameData.initialItemId == -1 || gameData.initialWeaponId == -1) return;
             
             // 只在GameManager中记录选择了什么角色，携带了什么武器和道具等等，
@@ -108,11 +111,13 @@ public class SelectPanel : MonoBehaviour
         btnSelectWeapon = transform.Find("WeaponItemSelect/Weapon/SelectWeaponBtn").GetComponent<Button>();
         btnSelectWeapon.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             EventCenter.Broadcast<string>(EventDefine.ShowWeaponItemPanel, "weapon");
         });
         btnSelectItem = transform.Find("WeaponItemSelect/Item/SelectItemBtn").GetComponent<Button>();
         btnSelectItem.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             EventCenter.Broadcast<string>(EventDefine.ShowWeaponItemPanel, "item");
         });
 
@@ -148,6 +153,7 @@ public class SelectPanel : MonoBehaviour
             int index = i;
             hero.GetComponent<Button>().onClick.AddListener(() =>
             {
+                AudioManager.Instance.PlayButtonCliclkEffect();
                 curSelectedHeroIndex = index;
                 RefreshHeroScroll();
                 RefreshHeroInfo();

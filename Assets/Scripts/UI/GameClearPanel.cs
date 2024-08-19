@@ -28,6 +28,7 @@ public class GameClearPanel : MonoBehaviour
         btnBackMenu = transform.Find("NewGameBtn").GetComponent<Button>();
         btnBackMenu.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             GameManager.Instance.ClearGameDataAndPlayerPrefs(GameManager.Instance.gameData.saveIndex);
             GameManager.Instance.fsm.PerformTransition(Transition.Confirm);
             SceneManager.LoadScene("MenuScene");
@@ -35,6 +36,7 @@ public class GameClearPanel : MonoBehaviour
         btnEndlessGame = transform.Find("EndlessGameBtn").GetComponent<Button>();
         btnEndlessGame.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             // 进入无尽模式
             Hide();
             GameManager.Instance.fsm.PerformTransition(Transition.Endless);

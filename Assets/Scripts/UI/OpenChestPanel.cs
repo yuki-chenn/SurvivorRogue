@@ -61,6 +61,7 @@ public class OpenChestPanel : MonoBehaviour
         btnKeep = buttons.Find("KeepBtn").GetComponent<Button>();
         btnKeep.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             // 保留该道具
             GameManager.Instance.GetItem(curItemInfo);
             itemTrans.gameObject.SetActive(false);
@@ -70,6 +71,7 @@ public class OpenChestPanel : MonoBehaviour
         btnSale = buttons.Find("SaleBtn").GetComponent<Button>();
         btnSale.onClick.AddListener(() =>
         {
+            AudioManager.Instance.PlayButtonCliclkEffect();
             // 出售该道具
             GameManager.Instance.gameData.money += Constants.CHEST_SALE_PRICE_BY_RANK[curItemInfo.Rank];
             itemTrans.gameObject.SetActive(false);
