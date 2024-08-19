@@ -12,6 +12,8 @@ public class 魔法师 : Player
 
     private int 防御魔法_buff_id = 26;
 
+    public AudioClip 星落audio;
+
     protected override void Start()
     {
         base.Start();
@@ -26,6 +28,7 @@ public class 魔法师 : Player
     public override void 使用技能()
     {
         base.使用技能();
+        PlayAudioEffect(星落audio);
         var skill = Instantiate(skillGo, transform.position, Quaternion.identity, ContainerManager.Instance.weaponObjectContainer);
         skill.transform.Find("SkillCollider").GetComponent<BaseAttackObject>().source = gameObject;
     }

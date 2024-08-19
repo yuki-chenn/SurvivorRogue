@@ -15,6 +15,8 @@ public class 勇者 : Player
 
     private int 背水一战_buff_ID = 1;
 
+    public AudioClip 旋风斩击audio;
+
     protected override void Start()
     {
         base.Start();
@@ -31,6 +33,7 @@ public class 勇者 : Player
     public override void 使用技能()
     {
         base.使用技能();
+        PlayAudioEffect(旋风斩击audio);
         skillEffect.SetActive(true);
     }
 

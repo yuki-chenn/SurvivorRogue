@@ -17,6 +17,9 @@ public class BaseCharacter : MonoBehaviour
     // ∏’ÃÂ
     protected Rigidbody2D rigidBody;
 
+    // “Ù–ß≤•∑≈
+    protected AudioSource audioSource;
+
     public float maxHp;
     public float _hp;
     public float curHp
@@ -47,6 +50,7 @@ public class BaseCharacter : MonoBehaviour
         UItrans = transform.Find("UI");
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
         bloodBar = transform.Find("UI").GetComponentInChildren<Slider>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -138,4 +142,9 @@ public class BaseCharacter : MonoBehaviour
         }
     }
 
+
+    protected void PlayAudioEffect(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip,1.0f);
+    }
 }
