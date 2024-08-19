@@ -5013,7 +5013,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -5117,11 +5117,11 @@ MonoBehaviour:
   "\u8FDC\u7A0B\u51B7\u5374\u65F6\u95F4": 5
   "\u543C\u53EB\u65F6\u95F4": 1.5
   "\u543C\u53EB\u653B\u51FB\u7269\u4F53": {fileID: 7963147502376620552}
-  "\u6EDA\u52A8\u51B2\u51FB\u603B\u65F6\u95F4": 10
-  "\u6EDA\u52A8\u51B2\u51FB\u6B21\u6570": 5
+  "\u6EDA\u52A8\u51B2\u51FB\u603B\u65F6\u95F4": 8
+  "\u6EDA\u52A8\u51B2\u51FB\u6B21\u6570": 4
   "\u5C16\u523A\u98DE\u5F39\u65F6\u95F4": 3
-  "\u5C16\u523A\u98DE\u5F39\u6B21\u6570": 10
-  "\u5C16\u523A\u98DE\u5F39\u4E2A\u6570": 30
+  "\u5C16\u523A\u98DE\u5F39\u6B21\u6570": 8
+  "\u5C16\u523A\u98DE\u5F39\u4E2A\u6570": 20
   "\u53D1\u5C04\u7269\u4F53": {fileID: 1093709884120782443, guid: 242421188fcf41f4c9aef2a6b6d19b91, type: 3}
   "\u53D1\u5C04\u7269\u4F53\u751F\u6210\u70B9": {fileID: 5711874007094147500}
   "\u6CF0\u5C71\u538B\u9876\u65F6\u95F4": 2
