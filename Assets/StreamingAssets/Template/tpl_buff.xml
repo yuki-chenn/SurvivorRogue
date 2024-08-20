@@ -118,7 +118,7 @@
     <tickTime>-1.0</tickTime>
     <maxTickCount>-1</maxTickCount>
     <priority>0</priority>
-    <addType>1</addType>
+    <addType>2</addType>
     <removeType>0</removeType>
   </data>
   <data>

@@ -9,7 +9,7 @@ public class 生命之金 : BaseItem
         base.OnGet();
         int val = GameManager.Instance.gameData.money;
         GameManager.Instance.gameData.money = 0;
-        if (GameManager.Instance.isEndlessMode())
+        if (GameManager.Instance.isEndlessMode(false))
         {
             attr.最大生命 += 0.1f * val;
         }

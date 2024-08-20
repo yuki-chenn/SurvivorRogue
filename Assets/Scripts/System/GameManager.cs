@@ -783,9 +783,10 @@ public class GameManager : PersistentSingleton<GameManager>
 
     #endregion
 
-    public bool isEndlessMode()
+    public bool isEndlessMode(bool isFight=true)
     {
-        return gameData.curWave >= Constants.ENDLESS_WAVE;
+        if(isFight) return gameData.curWave > Constants.ENDLESS_WAVE;
+        else return gameData.curWave >= Constants.ENDLESS_WAVE;
     }
 
     private void OnDestroy()
