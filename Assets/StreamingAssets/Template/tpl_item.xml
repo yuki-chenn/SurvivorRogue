@@ -505,7 +505,7 @@
     <ID>51</ID>
     <name>永恒血冠</name>
     <rank>4</rank>
-    <description>当拾取&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;时，溢出恢复生命的&lt;color="#44BF19"&gt;10%&lt;/color&gt;将转换为最大生命（无尽模式不生效）</description>
+    <description>当拾取&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;时，溢出恢复生命的&lt;color="#44BF19"&gt;5%&lt;/color&gt;将转换为最大生命（无尽模式不生效）</description>
     <price>297</price>
     <index>50</index>
     <initial>0</initial>
