@@ -8,7 +8,7 @@
     <maxHp>120.0</maxHp>
     <defense>8.0</defense>
     <moveSpeed>40.0</moveSpeed>
-    <attack>35.0</attack>
+    <attack>30.0</attack>
     <gainExp>50</gainExp>
     <isBoss>0</isBoss>
     <index>0</index>
@@ -73,7 +73,7 @@
     <maxHp>350.0</maxHp>
     <defense>20.0</defense>
     <moveSpeed>40.0</moveSpeed>
-    <attack>20.0</attack>
+    <attack>40.0</attack>
     <gainExp>100</gainExp>
     <isBoss>0</isBoss>
     <index>5</index>
@@ -86,7 +86,7 @@
     <maxHp>400.0</maxHp>
     <defense>25.0</defense>
     <moveSpeed>40.0</moveSpeed>
-    <attack>20.0</attack>
+    <attack>25.0</attack>
     <gainExp>150</gainExp>
     <isBoss>0</isBoss>
     <index>6</index>
@@ -99,7 +99,7 @@
     <maxHp>300.0</maxHp>
     <defense>15.0</defense>
     <moveSpeed>25.0</moveSpeed>
-    <attack>20.0</attack>
+    <attack>35.0</attack>
     <gainExp>130</gainExp>
     <isBoss>0</isBoss>
     <index>7</index>
@@ -109,13 +109,130 @@
     <ID>9</ID>
     <name>变异甲虫</name>
     <description></description>
-    <maxHp>20000.0</maxHp>
-    <defense>100.0</defense>
+    <maxHp>15000.0</maxHp>
+    <defense>80.0</defense>
     <moveSpeed>20.0</moveSpeed>
     <attack>60.0</attack>
     <gainExp>10000</gainExp>
     <isBoss>1</isBoss>
     <index>8</index>
     <dropId>4</dropId>
+  </data>
+  <data>
+    <ID>10</ID>
+    <name>变异甲虫_无尽</name>
+    <description></description>
+    <maxHp>150000.0</maxHp>
+    <defense>160.0</defense>
+    <moveSpeed>20.0</moveSpeed>
+    <attack>120.0</attack>
+    <gainExp>20000</gainExp>
+    <isBoss>1</isBoss>
+    <index>8</index>
+    <dropId>4</dropId>
+  </data>
+  <data>
+    <ID>11</ID>
+    <name>骷髅怪_无尽</name>
+    <description>亡者的战士，带着不死的执念游荡在战场上。它可以毫不犹豫地将自己的脑袋扯下，作为致命的投掷武器。也会它会用脑袋猛击对手，粉碎敌人。</description>
+    <maxHp>1200.0</maxHp>
+    <defense>16.0</defense>
+    <moveSpeed>40.0</moveSpeed>
+    <attack>60.0</attack>
+    <gainExp>100</gainExp>
+    <isBoss>0</isBoss>
+    <index>0</index>
+    <dropId>1</dropId>
+  </data>
+  <data>
+    <ID>12</ID>
+    <name>尖刺蜗牛_无尽</name>
+    <description></description>
+    <maxHp>1000.0</maxHp>
+    <defense>20.0</defense>
+    <moveSpeed>20.0</moveSpeed>
+    <attack>40.0</attack>
+    <gainExp>60</gainExp>
+    <isBoss>0</isBoss>
+    <index>1</index>
+    <dropId>1</dropId>
+  </data>
+  <data>
+    <ID>13</ID>
+    <name>妖怪书_无尽</name>
+    <description></description>
+    <maxHp>800.0</maxHp>
+    <defense>10.0</defense>
+    <moveSpeed>10.0</moveSpeed>
+    <attack>50.0</attack>
+    <gainExp>40</gainExp>
+    <isBoss>0</isBoss>
+    <index>2</index>
+    <dropId>1</dropId>
+  </data>
+  <data>
+    <ID>14</ID>
+    <name>蝙蝠群_无尽</name>
+    <description></description>
+    <maxHp>600.0</maxHp>
+    <defense>6.0</defense>
+    <moveSpeed>45.0</moveSpeed>
+    <attack>40.0</attack>
+    <gainExp>20</gainExp>
+    <isBoss>0</isBoss>
+    <index>3</index>
+    <dropId>1</dropId>
+  </data>
+  <data>
+    <ID>15</ID>
+    <name>蘑菇怪人_无尽</name>
+    <description></description>
+    <maxHp>1300.0</maxHp>
+    <defense>10.0</defense>
+    <moveSpeed>20.0</moveSpeed>
+    <attack>100.0</attack>
+    <gainExp>400</gainExp>
+    <isBoss>0</isBoss>
+    <index>4</index>
+    <dropId>2</dropId>
+  </data>
+  <data>
+    <ID>16</ID>
+    <name>机械蚯蚓_无尽</name>
+    <description></description>
+    <maxHp>3500.0</maxHp>
+    <defense>40.0</defense>
+    <moveSpeed>40.0</moveSpeed>
+    <attack>80.0</attack>
+    <gainExp>200</gainExp>
+    <isBoss>0</isBoss>
+    <index>5</index>
+    <dropId>3</dropId>
+  </data>
+  <data>
+    <ID>17</ID>
+    <name>机械枪兵_无尽</name>
+    <description></description>
+    <maxHp>4000.0</maxHp>
+    <defense>50.0</defense>
+    <moveSpeed>40.0</moveSpeed>
+    <attack>50.0</attack>
+    <gainExp>300</gainExp>
+    <isBoss>0</isBoss>
+    <index>6</index>
+    <dropId>3</dropId>
+  </data>
+  <data>
+    <ID>18</ID>
+    <name>电眼仔_无尽</name>
+    <description></description>
+    <maxHp>3000.0</maxHp>
+    <defense>30.0</defense>
+    <moveSpeed>25.0</moveSpeed>
+    <attack>70.0</attack>
+    <gainExp>260</gainExp>
+    <isBoss>0</isBoss>
+    <index>7</index>
+    <dropId>3</dropId>
   </data>
 </root>
