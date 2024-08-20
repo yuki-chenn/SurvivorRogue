@@ -28,6 +28,21 @@ public class AudioManager : PersistentSingleton<AudioManager>
         bgmAudioSource = ass[0];
         effectAudioSource = ass[1];
         bgmAudioSource.loop = true; // …Ë÷√±≥æ∞“Ù¿÷“Ù∆µ‘¥—≠ª∑≤•∑≈
+        LoadPlayerPrefs();
+        SetBgmScale(bgmScale);
+    }
+
+    public void SavePlayerPrefs()
+    {
+        PlayerPrefs.SetFloat("bgmScale", bgmScale);
+        PlayerPrefs.SetFloat("effectScale", effectScale);
+        PlayerPrefs.Save();
+    }
+
+    public void LoadPlayerPrefs()
+    {
+        bgmScale = PlayerPrefs.HasKey("bgmScale") ? PlayerPrefs.GetFloat("bgmScale") : 1.0f;
+        effectScale = PlayerPrefs.HasKey("effectScale") ? PlayerPrefs.GetFloat("effectScale") : 1.0f;
     }
 
     public void SetBgmScale(float scale)

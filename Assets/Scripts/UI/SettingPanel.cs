@@ -41,6 +41,7 @@ public class SettingPanel : MonoBehaviour
             AudioManager.Instance.PlayButtonCliclkEffect();
             AudioManager.Instance.SetBgmScale(bgmScale);
             AudioManager.Instance.SetEffectScale(effectScale);
+            AudioManager.Instance.SavePlayerPrefs();
             Hide();
         });
 
