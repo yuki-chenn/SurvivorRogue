@@ -789,6 +789,15 @@ public class GameManager : PersistentSingleton<GameManager>
         else return gameData.curWave >= Constants.ENDLESS_WAVE;
     }
 
+    public void 生成不灭圣辉()
+    {
+        var go = Instantiate(AssetManager.Instance.不灭圣辉攻击物体, playerGo.transform);
+        go.GetComponent<抵挡飞行物>().source = playerGo;
+        go.GetComponent<不灭圣辉AttackObject>().source = playerGo;
+        go.GetComponent<击退AttackObject>().source = playerGo;
+    }
+
+
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;

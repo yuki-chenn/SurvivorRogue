@@ -495,7 +495,7 @@
     <ID>50</ID>
     <name>不灭圣辉</name>
     <rank>4</rank>
-    <description>当你死亡时，立刻&lt;color="#44BF19"&gt;复活&lt;/color&gt;并恢复全部生命，并重置技能冷却，只能触发一次</description>
+    <description>当你死亡时，立刻&lt;color="#44BF19"&gt;复活&lt;/color&gt;并恢复全部生命，重置技能冷却，并召唤圣光之力10秒保护自身。整局游戏只能触发一次</description>
     <price>325</price>
     <index>49</index>
     <initial>0</initial>

@@ -47,7 +47,7 @@ public class DamageInfo
             if (isMiss) return 0.0f;
             // 防御减免
             //var dmg = Mathf.Max(0, amount - defense);
-            var val = amount * amount / (amount + defense);
+            var val = amount * amount / (amount + defense + float.Epsilon);
 
             // 伤害减免
             val *= (1 - Mathf.Min(1.0f, reduction / 100.0f));

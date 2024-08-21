@@ -37,6 +37,9 @@ public class AssetManager : ScriptableObject
     public GameObject 暂停道具模板;
     public GameObject 暂停增益模板;
 
+
+    public GameObject 不灭圣辉攻击物体;
+
     public GameObject EnemySpawnerPrefab;
 
     public List<GameObject> HeroPrefab;

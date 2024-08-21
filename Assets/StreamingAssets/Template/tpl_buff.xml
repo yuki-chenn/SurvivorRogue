@@ -52,7 +52,7 @@
   <data>
     <ID>5</ID>
     <name>不灭圣辉之力</name>
-    <description>当你死亡时，立刻复活并恢复全部血量，并重置技能冷却。</description>
+    <description>当你死亡时，立刻复活并恢复全部血量，重置技能冷却，并召唤圣光之力10秒保护自身。</description>
     <maxStack>-1</maxStack>
     <duration>-1.0</duration>
     <tickTime>-1.0</tickTime>
