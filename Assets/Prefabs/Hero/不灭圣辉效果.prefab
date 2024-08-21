@@ -19532,7 +19532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495ff49fb20aa6e44b72be2b73ed42eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 20
+  delay: 10
   destory: 1
 --- !u!114 &4197459227057803561
 MonoBehaviour:
