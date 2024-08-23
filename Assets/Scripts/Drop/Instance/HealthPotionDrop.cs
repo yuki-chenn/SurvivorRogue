@@ -33,17 +33,15 @@ public class HealthPotionDrop : BaseDrop
         base.OnPickedUp();
         
         #region 51-永恒血冠
-        // 当拾取血瓶时，溢出恢复生命的5%将转换为最大生命。
+        // 当拾取血瓶时，溢出恢复生命的10%(1%)将转换为最大生命。
         if (GameManager.Instance.HasItem(ItemEnum.永恒血冠))
         {
-            if(!GameManager.Instance.isEndlessMode())
-            {
-                float restore = Mathf.Min(GameManager.Instance.Player.maxHp - GameManager.Instance.Player.curHp, health);
-                float overflow = health - restore;
-                float addMaxHp = overflow * 0.05f;
-                GameManager.Instance.gameData.playerAttr.最大生命 += addMaxHp;
-                GameManager.Instance.Player.maxHp = GameManager.Instance.gameData.playerAttr.最大生命;
-            }
+            float restore = Mathf.Min(GameManager.Instance.Player.maxHp - GameManager.Instance.Player.curHp, health);
+            float overflow = health - restore;
+            float addMaxHp = overflow * (GameManager.Instance.isEndlessMode() ? 0.005f : 0.05f) ;
+            GameManager.Instance.gameData.playerAttr.最大生命 += addMaxHp;
+            GameManager.Instance.Player.maxHp = GameManager.Instance.gameData.playerAttr.最大生命;
+            
         }
         #endregion
 

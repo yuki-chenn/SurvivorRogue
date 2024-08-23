@@ -505,7 +505,7 @@
     <ID>51</ID>
     <name>永恒血冠</name>
     <rank>4</rank>
-    <description>当拾取&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;时，溢出恢复生命的&lt;color="#44BF19"&gt;5%&lt;/color&gt;将转换为最大生命（无尽模式不生效）</description>
+    <description>当拾取&lt;color="#FBE031"&gt;血瓶&lt;/color&gt;时，溢出恢复生命的&lt;color="#44BF19"&gt;5%（无尽模式为0.5%）&lt;/color&gt;将转换为最大生命</description>
     <price>297</price>
     <index>50</index>
     <initial>0</initial>
@@ -955,7 +955,7 @@
     <ID>96</ID>
     <name>生命之金</name>
     <rank>3</rank>
-    <description>将所有的金币&lt;color="#44BF19"&gt;1:2&lt;/color&gt;转换为最大生命。(无尽模式改为&lt;color="#44BF19"&gt;1:0.1&lt;/color&gt;)</description>
+    <description>将所有的金币&lt;color="#44BF19"&gt;1:2&lt;/color&gt;转换为最大生命。(无尽模式改为&lt;color="#44BF19"&gt;1:0.5&lt;/color&gt;)</description>
     <price>100</price>
     <index>95</index>
     <initial>0</initial>

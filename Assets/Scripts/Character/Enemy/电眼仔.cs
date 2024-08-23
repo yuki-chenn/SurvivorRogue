@@ -36,6 +36,10 @@ public class 电眼仔 : Enemy
 
     public void 发射激光()
     {
+        if (激光 == null)
+        {
+            return;
+        }
         激光.SetActive(true);
         // 先设置激光对准玩家
         Vector2? targetPos = GameManager.Instance.GetPlayerPosition();
@@ -121,6 +125,7 @@ public class 电眼仔 : Enemy
     public override void Die(float time)
     {
         关闭激光();
+        StopAllCoroutines();
         Destroy(激光);
         base.Die(time);
     }
