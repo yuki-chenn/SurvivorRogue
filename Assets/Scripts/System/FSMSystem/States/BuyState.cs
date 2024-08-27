@@ -31,6 +31,8 @@ public class BuyState : FSMState
 
         GameUIManager.Instance.UpdateLevelExp(GameManager.Instance.gameData.level,
             GameManager.Instance.gameData.curExp, GameManager.Instance.gameData.nextLevelExp);
+
+        AdvManager.Instance.ShowInter();
     }
 
     public override void DoBeforeLeaving()

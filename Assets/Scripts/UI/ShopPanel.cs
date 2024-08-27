@@ -18,6 +18,7 @@ public class ShopPanel : MonoBehaviour
     private Button btnContinue;
     private Button btnRefreshSelections;
     private Button btnBackMenu;
+    private Button btnAdvAddMoney;
 
     private Transform weapons;
     private Transform selections;
@@ -163,9 +164,21 @@ public class ShopPanel : MonoBehaviour
             // ´æµµ
             GameManager.Instance.SaveGameData(GameManager.Instance.gameData.saveIndex);
             GameManager.Instance.OverridePlayerPrefs(GameManager.Instance.gameData.saveIndex);
-
-            GameManager.Instance.fsm.PerformTransition(Transition.BackMenu);
             SceneManager.LoadScene("MenuScene");
+            GameManager.Instance.fsm.PerformTransition(Transition.BackMenu);
+        });
+
+        btnAdvAddMoney = transform.Find("AdvAddMoneyBtn").GetComponent<Button>();
+        btnAdvAddMoney.onClick.AddListener(() =>
+        {
+            AdvManager.Instance.ShowReward(() =>
+            {
+                GameManager.Instance.gameData.money += 50;
+                GameUIManager.Instance.UpdateMoney(GameManager.Instance.gameData.money);
+                // ´æµµ
+                GameManager.Instance.SaveGameData(GameManager.Instance.gameData.saveIndex);
+                GameManager.Instance.OverridePlayerPrefs(GameManager.Instance.gameData.saveIndex);
+            });
         });
 
         weapons = transform.Find("Weapons");
