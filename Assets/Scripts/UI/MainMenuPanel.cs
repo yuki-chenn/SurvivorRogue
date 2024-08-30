@@ -77,6 +77,7 @@ public class MainMenuPanel : MonoBehaviour
         titleRecT.DOAnchorPos(new Vector2(0, 380), 0.5f);
         btnSettingRecT.DOAnchorPos(new Vector2(-90, 90), 0.5f);
         buttonsRecT.DOAnchorPos(new Vector2(0, -80), 0.5f).OnComplete(() => { gameObject.SetActive(false); });
+        AdvManager.Instance.CloseBanner();
     }
 
     private void Show()
@@ -85,6 +86,7 @@ public class MainMenuPanel : MonoBehaviour
         titleRecT.DOAnchorPos(new Vector2(0,-370), 0.5f);
         buttonsRecT.DOAnchorPos(new Vector2(0, 222), 0.5f);
         btnSettingRecT.DOAnchorPos(new Vector2(-90, -90), 0.5f);
+        AdvManager.Instance.ShowBanner();
     }
 
 }

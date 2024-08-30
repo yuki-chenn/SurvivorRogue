@@ -3275,7 +3275,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInitialized: 0
-  existBanner: 0
+  showBanner: 0
+  loadBannerSuccessCount: 0
+  loadBannerFailCount: 0
+  BannerCd: 60
+  bannerTimer: 0
+  InterCd: 180
+  interCdTimer: 0
+  interLoadSuccessCount: 0
+  interLoadFailCount: 0
+  interShowSuccessCount: 0
 --- !u!1 &899212110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5390,9 +5399,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478119407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c331ddd7a16b4ed45a40fc00498bd725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478119413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478119407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc9647c920856dd46a023fcb64b8becc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1531401833

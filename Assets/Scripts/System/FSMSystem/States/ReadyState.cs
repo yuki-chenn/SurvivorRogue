@@ -18,13 +18,12 @@
     public override void Act()
     {
         base.Act();
-        AdvManager.Instance.ShowBanner();
+        
     }
 
     public override void DoBeforeLeaving()
     {
         base.DoBeforeLeaving();
-        AdvManager.Instance.CloseBanner();
         // 设置玩家的数据
     }
 

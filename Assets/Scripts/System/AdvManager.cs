@@ -41,7 +41,8 @@ public class AdvManager : PersistentSingleton<AdvManager>
     public float bannerTimer;
 
 #if UNITY_ANDROID
-    private string _bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
+    //private string _bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
+    private string _bannerAdUnitId = "ca-app-pub-5633392331827463/1781726899";
 #elif UNITY_IPHONE
   private string _bannerAdUnitId = "ca-app-pub-3940256099942544/2934735716";
 #else
@@ -147,7 +148,8 @@ public class AdvManager : PersistentSingleton<AdvManager>
     #region 插屏广告
 
 #if UNITY_ANDROID
-    private string _interAdUnitId = "ca-app-pub-3940256099942544/1033173712";
+    //private string _interAdUnitId = "ca-app-pub-3940256099942544/1033173712";
+    private string _interAdUnitId = "ca-app-pub-5633392331827463/1398583515";
 #elif UNITY_IPHONE
   private string _interAdUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
@@ -260,7 +262,8 @@ public class AdvManager : PersistentSingleton<AdvManager>
 
     #region 激励广告
 #if UNITY_ANDROID
-    private string _rewardAdUnitId = "ca-app-pub-3940256099942544/5224354917";
+    //private string _rewardAdUnitId = "ca-app-pub-3940256099942544/5224354917";
+    private string _rewardAdUnitId = "ca-app-pub-5633392331827463/5232154808";
 #elif UNITY_IPHONE
   private string _rewardAdUnitId = "ca-app-pub-3940256099942544/1712485313";
 #else
